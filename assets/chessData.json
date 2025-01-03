@@ -1,0 +1,1306 @@
+{
+  "status": "ok",
+  "totalResults": 1103,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "Indian teen becomes youngest world chess champion",
+      "description": "Gukesh Dommaraju, an 18-year-old Indian chess prodigy, has made history by becoming the youngest-ever world chess champion. He defeated the reigning champion, Ding Liren of China, in a thrilling match held in Singapore. This victory marks a significant milestone for Indian chess and solidifies Gukesh's position as a rising star in the world of chess. Gukesh's achievement has been widely celebrated in India, with many hailing him as a national hero. His victory is a testament to his exceptional talent, dedication, and hard work.",
+      "url": "https://www.bbc.com/news/articles/crl3d5gyxr7o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/d84f/live/d960caf0-b892-11ef-8f4f-f32c7e094699.png",
+      "publishedAt": "2024-12-12T15:56:38Z",
+      "content": "Indian teenager Gukesh Dommaraju has become the youngest-ever world chess champion after beating defending champion China's Ding Liren in a dramatic turn on Thursday.\r\nDommaraju, at age 18, is four y… [+2279 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Xkcd.com"
+      },
+      "author": "About",
+      "title": "Infinite Armada Chess",
+      "description": "Infinite Armada Chess reimagines the chessboard as an expandable, infinite plane where players command \"armadas\" of pieces. The gameplay might combine strategy from traditional chess with exploration, expansion, and dynamic rules.Infinite Armada Chess is a humorous concept from the xkcd webcomic. It's a satirical take on the idea of escalating warfare, where instead of traditional chess pieces, players command vast armadas of spaceships.",
+      "url": "https://xkcd.com/3020/",
+      "urlToImage": "https://imgs.xkcd.com/comics/infinite_armada_chess_2x.png",
+      "publishedAt": "2024-12-04T05:00:00Z",
+      "content": "This work is licensed under a\r\nCreative Commons Attribution-NonCommercial 2.5 License.\r\nThis means you're free to copy and share these comics (but not to sell them). More details."
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "Alana Wise",
+      "title": "At 18, India's Gukesh Dommaraju becomes the youngest World Chess Champion ever",
+      "description": "Dommaraju unseated China's Ding Liren to become the new world chess champion. \"Every chess player wants to experience this moment, and very few get the chance,\" Dommaraju said after the match.Gukesh Dommaraju, the 18-year-old chess prodigy from India, has unseated China's Ding Liren to become the new world chess champion.\n\nBorn in 2006, Dommaraju is the youngest world champion of all time, a record previously held by Garry Kasparov, who became world champion in 1985 at age 22.\n\nDommaraju secured the win Thursday in Singapore after a tight match between the two grandmasters that seemed on the verge of a tie.\n\n\"Ding's opening choice was expected, but Gukesh played a variation that nobody expected,\" International Chess Federation President Arkady Dvorkovich said.",
+      "url": "https://www.npr.org/2024/12/12/nx-s1-5227047/chess-gukesh-dommaraju-youngest-world-champion",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5537x3115+0+288/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F04%2F63%2F6d2139ca411fb4f3e627d07c27de%2Fgettyimages-2188905178.jpg",
+      "publishedAt": "2024-12-12T21:19:51Z",
+      "content": "Gukesh Dommaraju, the 18-year-old chess prodigy from India, has unseated China's Ding Liren to become the new world chess champion.\r\nBorn in 2006, Dommaraju is the youngest world champion of all time… [+2192 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hackaday"
+      },
+      "author": "Bryan Cockfield",
+      "title": "Dog Plays Chess on ESP32",
+      "description": "The ESP32 is s remarkably powerful microcontroller, where its dual-core processor and relatively high clock speed can do some impressive work. But getting this microcontroller designed for embedded systems to do tasks that would generally be given to a much more powerful PC-type computer takes a little bit more willpower. Inspired by his dog, [Folkert] decided to program an ESP32 to play chess, a famously challenging task for computer scientists in the past. He calls this ESP32 chess system Dog.",
+      "url": "https://hackaday.com/2024/12/22/dog-plays-chess-on-esp32/",
+      "urlToImage": "https://hackaday.com/wp-content/uploads/2024/12/dog-chess-main.jpg",
+      "publishedAt": "2024-12-22T12:00:16Z",
+      "content": "The ESP32 is s remarkably powerful microcontroller, where its dual-core processor and relatively high clock speed can do some impressive work. But getting this microcontroller designed for embedded s… [+1537 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hackaday"
+      },
+      "author": "Heidi Ulrich",
+      "title": "Chess What: One More Pi-Powered Board",
+      "description": "Chess is timeless, but automating it? That’s where the real magic begins. Enter [Tamerlan Goglichidze]’s Pi Board, an automated chess system that blends modern tech with age-old strategy. Inspired by Harry Potter’s moving chessboard and the commercial Square Off board, [Tamerlan] re-imagines the concept using a Raspberry Pi, stepper motors, and some clever engineering. It’s not just about moving pieces — it’s about doing so with precision and flair.\n\nAt its core, the Pi Board employs an XY stepper motor grid coupled with magnets to glide chess pieces across the board. While electromagnets seemed like a promising start, [Tamerlan] found them impractical due to overheating and polarity-switching issues. Enter servo linear actuators: efficient, precise, and perfect for the job.",
+      "url": "https://hackaday.com/2024/12/03/chess-what-one-more-pi-powered-board/",
+      "urlToImage": "https://hackaday.com/wp-content/uploads/2024/12/pi-board-chess-1200.jpg",
+      "publishedAt": "2024-12-03T19:30:28Z",
+      "content": "Chess is timeless, but automating it? Thats where the real magic begins. Enter [Tamerlan Goglichidze]s Pi Board, an automated chess system that blends modern tech with age-old strategy. Inspired by H… [+1230 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hackaday"
+      },
+      "author": "Al Williams",
+      "title": "Microchess Remembered",
+      "description": "Playing chess has always been a bellwether for computers. The game isn’t trivial, but the rules are managably simple. However, the game is too complex to be easily solved entirely, so you have to use tricky software to play a credible game. Big computers do have an advantage, of course. But Microchess — arguably the first commercial game for home computers — was able to play on tiny machines like the Kim-1. [Joachim Froholt] interviewed [Peter Jennings] — the man behind Microchess to learn the whole story of its creation.\n\nIn 1960, [Jennings] was ten years old and had to persuade the local librarian to let him read adult books on electronics and computers. Five years later, a ham radio teletype and some circuitry helped him practice chess openings and was the first of many chess-playing machines he’d build or program.\n\nMicrochess itself took six months of painstaking programming, entering hex codes into the computer",
+      "url": "https://hackaday.com/2024/12/07/microchess-remembered/",
+      "urlToImage": "https://hackaday.com/wp-content/uploads/2024/12/chess.png",
+      "publishedAt": "2024-12-08T00:00:39Z",
+      "content": "Playing chess has always been a bellwether for computers. The game isn’t trivial, but the rules are managably simple. However, the game is too complex to be easily solved entirely, so you have to use… [+1241 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Medium"
+      },
+      "author": "Max",
+      "title": "Analyzing the World Chess Championship 2024: Empirical Synthesized Approach",
+      "description": "The 2024 World Chess Championship between Gukesh Dommaraju and Ding Liren captivated chess fans worldwide, culminating in an unforgettable finish where Gukesh claimed the title, becoming the Youngest World Champion .  Had the 14-game match ended in a draw, it might have been a fair outcome given Ding’s resilience and steadier performance. However, chess, much like professional sports, is unforgiving; one error can overturn everything. As the saying goes, “One mistake can undo a thousand good deeds.”",
+      "url": "https://medium.com/@maxamel2002/2024-world-chess-championship-analysis-empirical-synthesized-approach-98dd79920d2b",
+      "urlToImage": "https://miro.medium.com/v2/resize:fit:626/1*kRipkoikJq2uagDHnsPSLg.png",
+      "publishedAt": "2024-12-18T09:15:44Z",
+      "content": "2024 World Chess Championship analysis: empirical synthesized approach\r\nIntroduction\r\nThe 2024 World Chess Championship between Gukesh Dommaraju and Ding Liren captivated chess fans worldwide, culmin… [+13316 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Uncrate.com"
+      },
+      "author": null,
+      "title": "Chess Vintage Bookshelf Edition",
+      "description": "Upgrade your game nights with this Vintage Bookshelf Game, where classic board games meet sleek design. This Chess Set comes in a fabric-wrapped book cover that opens to reveal everything you need for play, making it easy to store and display on your shelf or coffee table. Featuring iconic game logos, it is perfect for taking on the road, whether you're heading out for a family vacation or a weekend getaway. Including a folding board, 32 wooden pieces, two fabric pouches, and game instructions, this set is designed for convenience and style.",
+      "url": "https://shop.uncrate.com/products/chess-vintage-bookshelf-edition",
+      "urlToImage": "http://shop.uncrate.com/cdn/shop/files/chess-vintage-bookshelf-edition-5.jpg?v=1727882587",
+      "publishedAt": "2024-12-11T17:00:09Z",
+      "content": "Editor’s Note\r\nUpgrade your game nights with this Vintage Bookshelf Game, where classic board games meet sleek design. This Chess Set comes in a fabric-wrapped book cover that opens to reveal everyth… [+362 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lichess.org"
+      },
+      "author": null,
+      "title": "Gukesh Becomes the Youngest Chess World Champion in History",
+      "description": "GM Gukesh D pressed a slightly better endgame for a long time against GM Ding Liren, who blunder unexpectedly into a losing king and pawn endgame. This victory marks a significant milestone for Indian chess and solidifies Gukesh's position as a rising star in the world of chess. Gukesh's achievement has been widely celebrated in India, with many hailing him as a national hero. His victory is a testament to his exceptional talent, dedication, and hard work.\",\n",
+      "url": "https://lichess.org/@/Lichess/blog/wcc-2024-round-14-gukesh-becomes-the-youngest-world-champion-in-history/cDggdNZw",
+      "urlToImage": "https://image.lichess1.org/display?fmt=webp&h=550&op=thumbnail&path=ublog:cDggdNZw:hO8EStpO.webp&w=880&sig=422534095d85c110ed882296f9f9334b8c5aebe3",
+      "publishedAt": "2024-12-12T13:29:23Z",
+      "content": "Lichess is providing a live stream for every day of the world championship. Make sure to tune in to our Twitch or YouTube channels for live stream coverage with our hosts GM Felix Blohberger and IM L… [+7249 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BBC News"
+      },
+      "author": null,
+      "title": "The Indian teen who became the world's youngest chess champion",
+      "description": "Indian teenager Gukesh Dommaraju shocked the world of chess on Thursday when he became the youngest world champion at the age of just 18.The Chennai-born prodigy defeated defending champion, China's Ding Liren, in a dramatic match staged in Singapore which he had entered as the challenger. The FIDE World Chess Championship carries a $2.5m (£1.96m) prize fund.\n\nIt marked the peak to date of his career, his greatest moment in a long string of achievements.\n\nGukesh became a grandmaster aged 12 years and seven months and even then, he was upfront about the fact that he dreamt of being the world champion",
+      "url": "https://www.bbc.com/news/articles/c23vn7x4012o",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3173/live/5bc43be0-b5e5-11ef-a0f2-fd81ae5962f4.jpg",
+      "publishedAt": "2024-12-13T04:22:17Z",
+      "content": "Indian teenager Gukesh Dommaraju shocked the world of chess on Thursday when he became the youngest world champion at the age of just 18.\r\nThe Chennai-born prodigy defeated defending champion, China'… [+4537 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Week Magazine"
+      },
+      "author": "theweekonlineeditorsuk@futurenet.com (Chas Newkey-Burden, The Week UK)",
+      "title": "Chennai's chess champions",
+      "description": "The Indian city is 'churning out' a huge number of chess 'wizards' and 'geniuses'.The broader culture of Chennai is helping to bolster this trend. It's a \"socially conservative\" city, said Al Jazeera, and many of the city's parents regard chess as a \"brainy\" hobby that helps their children focus on their studies.\n\nThe policies of the state government have also supported chess. There are cash prizes for winners and international chess events have been held in Tamil Nadu.",
+      "url": "https://theweek.com/sports/chennais-chess-champions",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/KkgZAuRiCeffjSSTV7BTHe-1200-80.jpg",
+      "publishedAt": "2024-12-17T10:42:15Z",
+      "content": "Indian teenager Gukesh Dommaraju has become the youngest ever world chess champion, deepening the \"love affair between Indians and chess\", said The Hindu.\r\nChess has been \"around for millennia\" and i… [+2953 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yanko Design"
+      },
+      "author": "Tanvi Joshi",
+      "title": "This ‘Wearable’ Chess Set features 32 ‘Chessmen’ Rings, and a Checkered Playable Scarf",
+      "description": "This ‘Wearable’ Chess Set features 32 ‘Chessmen’ Rings, and a Checkered Playable ScarfFrench designer Louis Le Joly Senoville has introduced Ha Mat, a wearable chess set that turns a centuries-old game into a playful, portable accessory. Born...",
+      "url": "https://www.yankodesign.com/2024/12/09/this-wearable-chess-set-features-32-chessmen-rings-and-a-checkered-playable-scarf/",
+      "urlToImage": "https://www.yankodesign.com/images/design_news/2024/12/accessorize-with-a-wearable-chess-set-and-turn-your-outfit-into-a-game-anywhere-anytime/HaMat_wearable_chess_00.jpg",
+      "publishedAt": "2024-12-09T23:30:17Z",
+      "content": "French designer Louis Le Joly Senoville has introduced Ha Mat, a wearable chess set that turns a centuries-old game into a playful, portable accessory. Born from his passion for chess and a desire to… [+2955 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yanko Design"
+      },
+      "author": "Tanvi Joshi",
+      "title": "This 3D Printed Chess Set Transforms Sand into Timeless Art",
+      "description": "This 3D Printed Chess Set Transforms Sand into Timeless ArtNot to be confused with the popular movie franchise involving different families clashing in a desert alien planet with sand-eating worms, the Dune Chess Set...",
+      "url": "https://www.yankodesign.com/2024/12/04/this-3d-printed-chess-set-transforms-sand-into-timeless-art/",
+      "urlToImage": "https://www.yankodesign.com/images/design_news/2024/12/auto-draft/dune_chess_set_1.jpg",
+      "publishedAt": "2024-12-04T23:30:35Z",
+      "content": "Not to be confused with the popular movie franchise involving different families clashing in a desert alien planet with sand-eating worms, the Dune Chess Set is more of a competitive board game craft… [+3542 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "Brittney Melton",
+      "title": "Foreign students advised to make plans before Trump. And, 2024's final news quiz",
+      "description": "Why universities are advising international students to return before Inauguration Day. And, the last NPR news quiz of the year.",
+      "url": "https://www.npr.org/2024/12/13/g-s1-38068/up-first-newsletter-international-university-students-holiday-travel-donald-trump-iran-syria",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1100x619+0+55/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd5%2Fe9%2Fcbb037eb4f378394949afc383d1f%2Fap24106642611253-custom-da40b073384a7864b04befa89d6df8822b07faad.jpg",
+      "publishedAt": "2024-12-13T13:03:05Z",
+      "content": "Good morning. You're reading the Up First newsletter. Subscribe here to get it delivered to your inbox, and listen to the Up First podcast for all the news you need to start your day.\r\nToday's top st… [+5495 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+      },
+      "author": "The Associated Press",
+      "title": "American imprisoned in Russia sentenced to new 15-year jail term for espionage",
+      "description": "A Russian-born U.S. citizen already imprisoned in Russia on a bribery conviction has been handed a second 15-year jail term for espionage, Russian news agencies reported",
+      "url": "https://abcnews.go.com/International/wireStory/american-imprisoned-russia-sentenced-new-15-year-jail-117077520",
+      "urlToImage": "https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9_992.jpg",
+      "publishedAt": "2024-12-24T09:56:33Z",
+      "content": "MOSCOW -- A Russian-born U.S. citizen already imprisoned in Russia on a bribery conviction has been handed a second 15-year jail term for espionage, Russian news agencies reported Tuesday.\r\nA Moscow … [+617 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Uncrate.com"
+      },
+      "author": "Uncrate",
+      "title": "Rimowa Mahjong Attache Set",
+      "description": "Rimowa's collection of gaming sets already includes poker and chess. You can add mahjong to the list with this luxury attache. The case itself is modeled after their \"real\" attache, made from the company's signature anodized grooved aluminum with rounded...",
+      "url": "https://uncrate.com/rimowa-mahjong-attache-set/",
+      "urlToImage": "https://uncrate.com/p/2024/12/rimowa-mahjong-attache.jpg",
+      "publishedAt": "2024-12-19T18:00:01Z",
+      "content": "This 15-pair gift box from the London Sock Company features effortlessly stylish colors like black, navy, grey, burgundy, hazelnut, and more. Socks may be small, but the right pair can make a big dif… [+370 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Uncrate.com"
+      },
+      "author": "Uncrate",
+      "title": "Garb: Game Night",
+      "description": "Akashi Kama Uniform Hoodie / $110. Waterford Crystal Connoisseur Aras Tumblr Set / $170. Blanton's Red Takara Bourbon / $200. Chess 7-In-1 Heirloom Edition / $399. Barbour Everitt Mule Slippers / $70. D.S. & Durga Portable Fireplace Candle / $65....",
+      "url": "https://uncrate.com/garb-game-night/",
+      "urlToImage": "https://uncrate.com/p/2024/12/Garb-Game-Night-2.jpg",
+      "publishedAt": "2024-12-13T21:15:00Z",
+      "content": "Tap water contamination is one of the biggest issues facing Americans today due to deteriorating infrastructure and inadequate regulation. Over 95% of tap water tested in the US was contaminated with… [+758 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cracked.com"
+      },
+      "author": "Jesse",
+      "title": "14 Riveting World Records from the Riveting World of Chess",
+      "description": "At the end of the day, chess is just analog Pokemon",
+      "url": "https://www.cracked.com/article_44474_14-riveting-world-records-from-the-riveting-world-of-chess.html",
+      "urlToImage": "https://s3.crackedcdn.com/phpimages/article/4/1/1/1190411.jpg",
+      "publishedAt": "2024-12-02T16:00:00Z",
+      "content": "Youre 37 years old. Youve studied and battled for a lifetime, and youre at the top of your game the top of the game. Then an eight-year-old shows up and mops the floor with you.\r\nSeveral matches have… [+3630 chars]"
+    },
+    {
+      "source": {
+        "id": "buzzfeed",
+        "name": "Buzzfeed"
+      },
+      "author": "Rachel Dunkel",
+      "title": "26 Gifts From Amazon So Good You'll Want To Add Them To Your Wish List Too",
+      "description": "Maybe go ahead and add two Polaroids to your cart...just in case.View Entire Post ›",
+      "url": "https://www.buzzfeed.com/racheldunkel/amazon-gifts-add-to-your-wishlist-too-an",
+      "urlToImage": "https://img.buzzfeed.com/buzzfeed-static/static/2024-12/6/15/campaign_images/dd60e48c4042/26-gifts-from-amazon-so-good-youll-want-to-add-th-2-495-1733498140-0_dblbig.jpg",
+      "publishedAt": "2024-12-15T00:31:02Z",
+      "content": "Clue is suitable for 36 players ages 8+. It is a process of elimination game in which players work to solve the mystery of who killed a victim with what weapon in which room of a cool, spooky mansion… [+653 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Natalie Musumeci",
+      "title": "Former FTX executive Ryan Salame has prison release date moved up by more than a year",
+      "description": "Former FTX executive Ryan Salame began his prison sentence at Maryland's medium-security Federal Correctional Institution in Cumberland on October 11.",
+      "url": "https://www.businessinsider.com/ryan-salame-scheduled-prison-release-moved-up-records-show-2024-12",
+      "urlToImage": "https://i.insider.com/6761adcbd610a4acda56b608?width=1200&format=jpeg",
+      "publishedAt": "2024-12-26T10:37:02Z",
+      "content": "Ryan Salame reported to a Maryland prison in October.AP Photo/Mary Altaffer)\r\n<ul><li>Ryan Salame, an ex-FTX executive, appears to have had time shaved off his scheduled release from prison.</li><li>… [+3678 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Android Police"
+      },
+      "author": "Karandeep Singh Oberoi",
+      "title": "Google Gemini's newest premade Gems want to be your personal hiring consultant",
+      "description": "Google Gemini's new custom-made chatbots can now help you with professional tasks like writing branded content, creating compelling pitches, and more",
+      "url": "https://www.androidpolice.com/google-gemini-new-gems-for-professionals/",
+      "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/2024/08/gemini-assistant-hero.jpg",
+      "publishedAt": "2024-12-06T23:08:16Z",
+      "content": "Key Takeaways\r\n<ul><li> Google today introduced a variety of new Gems in Gemini for working professionals. </li><li> According to the tech giant, the new Gems cater to sales, marketing, hiring, and c… [+2343 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "HYPEBEAST"
+      },
+      "author": "info@hypebeast.com (Hypebeast)",
+      "title": "HIDDEN.NY's \"Holiday Store\" Includes Collaborations With and wander, ASICS and SUICOKE",
+      "description": "HIDDEN.NY is in the holiday spirit this year. Starting on December 20, the moodboard-turned-brand will kick off a multi-day \"Holiday Store\" that includes collaborations with the likes of and wander, ASICS and Suicoke as well as a new range of in-line apparel …",
+      "url": "https://hypebeast.com/2024/12/hidden-ny-holiday-store-and-wander-asics-release-date",
+      "urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F12%2F19%2Fhidden-ny-holiday-store-and-wander-asics-release-date-tw.jpg?w=1080&cbr=1&q=90&fit=max",
+      "publishedAt": "2024-12-19T20:52:52Z",
+      "content": "HIDDEN.NY is in the holiday spirit this year. Starting on December 20, the moodboard-turned-brand will kick off a multi-day “Holiday Store” that includes collaborations with the likes of and wander, … [+1937 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera Staff",
+      "title": "How India’s Gukesh Dommaraju became chess king in a cricket crazy country",
+      "description": "Gukesh, a teenager from Chennai, is the youngest chess world champion. Here's how he got there.",
+      "url": "https://www.aljazeera.com/news/2024/12/13/how-indias-gukesh-dommaraju-became-chess-king-in-a-cricket-crazy-country",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241213__36QB77G__v2__HighRes__ChessWorldIndGukesh-1734090760.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-13T14:11:30Z",
+      "content": "Indian chess prodigy Gukesh Dommaraju has become the youngest world chess champion ever after defeating defending champion Ding Liren of China.\r\nGukeshs win on Thursday came in the last game of the 1… [+7558 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Gukesh defeats Ding, takes 6-5 lead in world chess championship",
+      "description": "The Indian teenager Gukesh Dommaraju moves a step closer to becoming the youngest chess world champion.",
+      "url": "https://www.aljazeera.com/sports/2024/12/8/gukesh-defeats-ding-takes-6-5-lead-in-world-chess-championship",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241125__36N78VE__v2__HighRes__ChessSinIndChnWorldChampionship-1-1733671642.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-08T15:45:52Z",
+      "content": "Teenage challenger Gukesh Dommaraju beat Chinas Ding Liren in the 11th game of their world championship match, taking a crucial lead as the tournament entered the final stretch.\r\nGukesh, whose win ga… [+1571 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Ding’s comeback win over Gukesh ties World Chess Championship final",
+      "description": "Chinese title holder forces India's teenaged challenger to resign in Game 12 and tie the scores at six points each.",
+      "url": "https://www.aljazeera.com/sports/2024/12/9/dings-comeback-win-over-gukesh-ties-world-chess-championship-final",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241125__36N78VD__v1__HighRes__ChessSinIndChnWorldChampionship-1733763132.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-09T17:12:05Z",
+      "content": "Defending champion Ding Liren has bounced back strongly to beat his teenaged challenger in the 12th game and level the score in the home stretch of their FIDE World Chess Championship match.\r\nIndias … [+1964 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Ding, Dommaraju tied after six games at World Chess Championship",
+      "description": "Teen challenger Gukesh Dommaraju of India holds reigning champ Ding Liren after first week of competition.",
+      "url": "https://www.aljazeera.com/sports/2024/12/1/ding-dommaraju-tied-after-six-games-at-world-chess-championship",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241125__36N78VE__v2__HighRes__ChessSinIndChnWorldChampionship-1733065651.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-01T15:32:49Z",
+      "content": "The 2024 World Chess Championship is finely poised after defending champion Ding Liren and teenage challenger Gukesh Dommaraju played out a thrilling 46-move draw in Singapore.\r\nThe score is tied at … [+1750 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "HYPEBEAST"
+      },
+      "author": "info@hypebeast.com (Hypebeast)",
+      "title": "Song Kang-ho Cast in Netflix's 'BEEF' Season Two",
+      "description": "Song Kang-ho is officially joining the cast of BEEF season two.Deadline reports that the Parasite star has been cast in the Netflix anthology series as a guest star, appearing alongside the main cast comprised of Carey Mulligan, Oscar Isaac, Charles Melton, C…",
+      "url": "https://hypebeast.com/2024/12/parasite-song-kang-ho-netflix-beef-season-2-casting-news",
+      "urlToImage": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2024%2F12%2F19%2Fparasite-song-kang-ho-netflix-beef-season-2-casting-news-tw.jpg?w=1080&cbr=1&q=90&fit=max",
+      "publishedAt": "2024-12-20T03:52:10Z",
+      "content": "Song Kang-ho is officially joining the cast of BEEF season two.\r\nDeadline reports that the Parasite star has been cast in the Netflix anthology series as a guest star, appearing alongside the main ca… [+683 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Adam Haigh",
+      "title": "Australia Exchange Says Investigating A Problem With Settlement",
+      "description": "(Bloomberg) -- ASX Ltd. said it’s investigating a problem with its settlement platform that caused a delay for some customers on Friday afternoon.Most Read...",
+      "url": "https://finance.yahoo.com/news/australia-exchange-says-investigating-problem-061208622.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/b0njY9tSeH_ctXFwNSAJnw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/bloomberg_markets_842/365ab9a5ddb912b5a880558956dcb68c",
+      "publishedAt": "2024-12-20T06:12:08Z",
+      "content": "(Bloomberg) -- ASX Ltd. said its investigating a problem with its settlement platform that caused a delay for some customers on Friday afternoon.\r\nMost Read from Bloomberg\r\nThe service will remain op… [+475 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": null,
+      "title": "Crowned youngest world chess champ, teen prodigy eyes 'greatness'...",
+      "description": "Crowned youngest world chess champ, teen prodigy eyes 'greatness'...\r\n\n \n \n \n (Third column, 10th story, link)\r\n\n \r\n\n \r\n\n \n Related stories:The 16-Year-Old Schoolboy Who Could Be the Next Usain Bolt...",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_fd21eb68-2a38-4047-8a30-974073b5ef5a",
+      "urlToImage": null,
+      "publishedAt": "2024-12-13T12:49:37Z",
+      "content": "If you click 'Accept all', we and our partners, including 237 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+678 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rock Paper Shotgun"
+      },
+      "author": "RPS",
+      "title": "The RPS Advent Calendar 2024, December 11th",
+      "description": "When I were a lad, you’d open an advent calendar and get a piece of chocolate shaped like a bell with an aftertaste so rancid you’d wish you’d eaten the little cardboard window instead. And you’d bloody well make do, too. Not these days. Now, you get a squadr…",
+      "url": "https://www.rockpapershotgun.com/the-rps-advent-calendar-2024-december-11th",
+      "urlToImage": "https://assetsio.gnwcdn.com/RPS24_Christmas_Calendar_Header_AW.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+      "publishedAt": "2024-12-11T12:00:00Z",
+      "content": "The RPS Advent Calender 2024 is underway! Each day reveals one of our favourite games from this year, leading up to our Game Of The Year on the 24th. Check the main calendar post to see the full list… [+2127 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MIT Technology Review"
+      },
+      "author": "Mark Douma ’63, Frank Rubin ’62",
+      "title": "Puzzle Corner September/October 2024 bonus solutions",
+      "description": "Here are solutions for the three bonus problems that appeared in the September/October 2024 Puzzle Corner column we guest edited. Solutions for S/O2, S/O4, and S/O6 are below; those for S/O1, S/O3, and S/O5 can be found here. S/O2. Frank notes that a repunit …",
+      "url": "https://www.technologyreview.com/2024/12/20/1108101/puzzle-corner-september-october-2024-bonus-solutions/",
+      "urlToImage": null,
+      "publishedAt": "2024-12-20T15:35:10Z",
+      "content": "David Dewan came up with this solution (which Richard Lipes also found on Wikipedia): Let N be any integer not divisible by 2 or 5. Consider repunits R1 = 1, R2 = 11, R3 = 111, , RN+1 and their resid… [+2034 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Android Police"
+      },
+      "author": "Rajesh Pandey",
+      "title": "Google Nest smart speakers are starting to get this Gemini-powered upgrade",
+      "description": "Your Nest speaker or display will soon sound different",
+      "url": "https://www.androidpolice.com/google-nest-smart-speakers-are-starting-get-gemini-powered-upgrade/",
+      "urlToImage": "https://static1.anpoimages.com/wordpress/wp-content/uploads/wm/2024/04/google-nest-audio-bookstack.JPG",
+      "publishedAt": "2024-12-03T04:59:13Z",
+      "content": "Key Takeaways\r\n<ul><li>\r\n Google seems to be slowly rolling out a more conversational Gemini-powered Google Assistant voice on Nest speakers.\r\n </li><li>\r\n Some users are reporting the new Gemini-pow… [+2413 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": null,
+      "title": "Nvidia is the latest chess piece in the US-China tech war",
+      "description": null,
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a885a636-b144-4f72-a9d7-03baa0abb653",
+      "urlToImage": null,
+      "publishedAt": "2024-12-11T17:45:55Z",
+      "content": "If you click 'Accept all', we and our partners, including 237 who are part of the IAB Transparency &amp; Consent Framework, will also store and/or access information on a device (in other words, use … [+678 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Food52.com"
+      },
+      "author": "Paul Hagopian",
+      "title": "Can You Guess How Many Lemons Our Test Kitchen Used in 2024?",
+      "description": "Today, Spotify Wrapped, the music streaming platform’s annual summary of its users’ personal listening habits, turns nine years old. Throughout Wrapped’s existence—and its sustained clutch over your most online friend’s (now private) Instagram story—we’ve lea…",
+      "url": "https://food52.com/blog/28572-food52-2024-grocery-report",
+      "urlToImage": "https://images.food52.com/eE3xqWUzsKs_WtniVFJo37TPi6M=/fit-in/1200x1200/fdfaf2a4-f1d9-4218-8bae-7addb0bbab95--2019-0319_groceries_stock-image_3x2_julia-gartland_223.jpg",
+      "publishedAt": "2024-12-05T14:20:13Z",
+      "content": "Today, Spotify Wrapped, the music streaming platforms annual summary of its users personal listening habits, turns nine years old. Throughout Wrappeds existenceand its sustained clutch over your most… [+2547 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "World chess champ Ding and teen challenger Gukesh tied past halfway mark",
+      "description": "Gukesh Dommaraju gives up strong position in middle game with inaccurate moves in eighth match of world championship.",
+      "url": "https://www.aljazeera.com/sports/2024/12/4/world-chess-champ-ding-and-teen-challenger-gukesh-tied-past-halfway-mark",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241125__36N78VA__v1__HighRes__ChessSinIndChnWorldChampionship-1733329597.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-04T16:56:04Z",
+      "content": "Defending world chess champion Ding Liren and teenage challenger Gukesh Dommaraju played to a fifth consecutive draw with neither player taking the lead after eight games.\r\nBoth players were deadlock… [+1719 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "Gukesh and Ding Liren draw Game 4 of tied World Chess Championship final",
+      "description": "Indian teenager and China's reigning world champion record second draw of 14-game final in Singapore.",
+      "url": "https://www.aljazeera.com/sports/2024/11/29/gukesh-and-ding-liren-draw-game-4-of-tied-world-chess-championship-final",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/11/2023-04-29T102517Z_83995259_RC2AO0A9S5RJ_RTRMADP_3_CHESS-WORLD-1732887882.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-11-29T14:35:43Z",
+      "content": "Indias Gukesh Dommaraju and reigning world champion Ding Liren of China have tied their fourth match of the ongoing World Chess Championship final with the overall score level at 2-2 in Singapore.\r\nT… [+2417 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Al Jazeera",
+      "title": "India’s Gukesh beats China’s Ding to become youngest chess world champion",
+      "description": "Indian teen prodigy Gukesh Dommaraju prevailed in a thrilling endgame that had been expected to end in a draw.",
+      "url": "https://www.aljazeera.com/sports/2024/12/12/indias-gukesh-beats-chinas-ding-to-become-youngest-chess-world-champion",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/12/AFP__20241212__36Q96XX__v1__HighRes__Chess2024ChnIndSin-1734011279.jpg?resize=1920%2C1440",
+      "publishedAt": "2024-12-12T14:15:52Z",
+      "content": "Teenager Gukesh Dommaraju of India became the youngest undisputed chess world champion by beating defending champion Ding Liren of China in a dramatic turn of events in the last game of a 14-game mat… [+1817 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Brittany Chang",
+      "title": "I sailed on Royal Caribbean's latest ship designed to attract cruise newbies — here's what to expect if it's your first time",
+      "description": "Royal Caribbean's latest and second-largest cruise ship, Utopia of the Seas, is exclusively operating short Caribbean voyages.",
+      "url": "https://www.businessinsider.com/royal-caribbean-utopia-of-the-seas-cruise-first-time-tips-2024-12",
+      "urlToImage": "https://i.insider.com/67575d1f91c1cc343d477a70?width=1200&format=jpeg",
+      "publishedAt": "2024-12-10T17:18:57Z",
+      "content": "Utopia of the Seas' short itineraries appeal to first-time cruisers and Royal Caribbean guests.Brittany Chang/Business Insider\r\n<ul><li>Royal Caribbean's latest ship, Utopia of the Seas, is operating… [+7606 chars]"
+    },
+    {
+      "source": {
+        "id": "techradar",
+        "name": "TechRadar"
+      },
+      "author": "Graham Barlow",
+      "title": "Google has a new chess game that lets you design the pieces with AI",
+      "description": "Google GenChess lets you design your chess pieces with AI and then play the board.",
+      "url": "https://www.techradar.com/computing/artificial-intelligence/google-has-a-new-chess-game-that-lets-you-design-the-pieces-with-ai",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/KMnivne9ibSSy2ucUZcvF8-1200-80.jpg",
+      "publishedAt": "2024-11-28T18:00:57Z",
+      "content": "<ul><li>GenChess lets you design the pieces with AI then play the board</li><li>It uses the Imagen 3 image-generation engine from Google Gemini</li><li>GenChess is free to play and you can redesign t… [+2896 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Digital Trends"
+      },
+      "author": "Sam Hill",
+      "title": "NYT Crossword: answers for Thursday, December 26",
+      "description": "The New York Times crossword puzzle can be tough! If you're stuck, we're here to help with a list of today's clues and answers.",
+      "url": "https://www.digitaltrends.com/gaming/nyt-crossword-answers-december-26/",
+      "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/06/nyt-crossword-logo.jpg?resize=1200%2C630&p=1",
+      "publishedAt": "2024-12-26T13:30:13Z",
+      "content": "The New York Times has plenty of word games on its roster today — with Wordle, Connections, Strands, and the Mini Crossword, there’s something for everyone — but the newspaper’s standard crossword pu… [+3161 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Mike Stubbs, Contributor, \n Mike Stubbs, Contributor\n https://www.forbes.com/sites/mikestubbs/",
+      "title": "How The Esports World Cup Will Shake Up Professional Chess In 2025",
+      "description": "One of the oldest active games in the world will join the Esports World Cup roster for 2025, finally bringing chess into the glamorous world of esports.",
+      "url": "https://www.forbes.com/sites/mikestubbs/2024/12/18/how-the-esports-world-cup-will-shake-up-professional-chess-in-2025/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6761eded8a3dd7a1ce21a7c9/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-12-18T10:30:00Z",
+      "content": "Chess is coming to the EWC next year. \r\nCredit: Esports World Cup \r\nChess has been around for a very long time and is considered one of the ultimate competitive games, pitting two people against each… [+4683 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNA"
+      },
+      "author": null,
+      "title": "Commentary: Parents, encourage your children to learn chess – but be clear about its benefits",
+      "description": "Amid the hype of the World Chess Championship in Singapore, is it a good idea to start learning chess? Hsu Li Yang of the Singapore Chess Federation has an admittedly biased perspective.",
+      "url": "https://www.channelnewsasia.com/commentary/chess-class-singapore-ding-liren-gukesh-dommaraju-magnus-carlsen-4783566",
+      "urlToImage": "https://onecms-res.cloudinary.com/image/upload/s--Z0dc29b8--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/mediacorp/cna/image/2024/11/26/JEM_0584.jpg?itok=WgDh5mn0",
+      "publishedAt": "2024-12-03T22:00:00Z",
+      "content": "However, a sense of healthy scepticism with regards to these seemingly logical beliefs is important. Just as in chess, one should assess positions objectively and analyse even obvious moves and captu… [+1104 chars]"
+    },
+    {
+      "source": {
+        "id": "polygon",
+        "name": "Polygon"
+      },
+      "author": "Austen Goslin",
+      "title": "Carry-On gives Netflix its first great cable thriller",
+      "description": "A great thriller lives and dies by its complexity. Movies like All the President’s Men or Blow Out create intricate, detailed worlds of mystery that pull you in before leaving you at the center of the labyrinth to unwind yourself in the days that follow. A so…",
+      "url": "https://www.polygon.com/what-to-watch/499107/carry-on-netflix-christmas-movie-thriller-watch-streaming",
+      "urlToImage": "https://platform.polygon.com/wp-content/uploads/sites/2/2024/12/Carry-On_u_00_23_05_09r_7c375b.jpg?quality=90&strip=all&crop=2.25%2C0%2C95.5%2C100&w=1200",
+      "publishedAt": "2024-12-20T22:04:15Z",
+      "content": "A great thriller lives and dies by its complexity. Movies like All the President’s Men or Blow Out create intricate, detailed worlds of mystery that pull you in before leaving you at the center of th… [+5197 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Boris Kreiman, Forbes Councils Member, \n Boris Kreiman, Forbes Councils Member\n https://www.forbes.com/councils/forbesbusinesscouncil/people/boriskreiman/",
+      "title": "How Business Leaders Can Apply Chess Strategy To Decision-Making",
+      "description": "The diversion of chess is a masterclass in technique, prescience and adaptability—qualities that are essential for victory in business.",
+      "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2024/12/18/how-business-leaders-can-apply-chess-strategy-to-decision-making/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6761709d7746c7b360a30a0a/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-12-18T13:15:00Z",
+      "content": "Boris Kreiman is the founder and CEO of Laws.com, a chess grandmaster, business coach and tech entrepreneur.\r\ngetty\r\nAs a chess grandmaster and a business visionary, Ive found that the parallels betw… [+4722 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "9to5google.com"
+      },
+      "author": "Abner Li",
+      "title": "Gemini rolling out Spotify Extension on Android, adds ‘Chess champ’ Gem",
+      "description": "Following Utilities, Messages, Phone, and WhatsApp, the Spotify Gemini Extension is rolling out today, while a Chess Gem is now available for Advanced users.\n\n\n\n more…",
+      "url": "http://9to5google.com/2024/12/05/gemini-spotify-extension-chess-gem/",
+      "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/12/Gemini-Chess-champ-GEM.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+      "publishedAt": "2024-12-05T16:51:48Z",
+      "content": "Following Utilities, Messages, Phone, and WhatsApp, the Spotify Gemini Extension is rolling out today, while a Chess Gem is now available for Advanced users.\r\n@Spotify is the second third-party Gemin… [+1453 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Faz.net"
+      },
+      "author": "Stefan Löffler",
+      "title": "Hype in Indien: Wie Gukeshs WM-Sieg den Schach-Boom in Indien befeuert",
+      "description": "Indien ist auf dem Weg, zur Vormacht im Schach zu werden. In einem Internat wächst eine neue Generation von Großmeistern heran. Der Herausforderer des Weltmeisters könnte ein Landsmann sein.",
+      "url": "https://www.faz.net/aktuell/sport/mehr-sport/wie-gukeshs-wm-sieg-den-schach-boom-in-indien-befeuert-110176510.html",
+      "urlToImage": "https://media1.faz.net/ppmedia/aktuell/sport/843128475/1.10176519/facebook_teaser/ehre-wem-ehre-gebuehrt.jpg",
+      "publishedAt": "2024-12-16T13:22:18Z",
+      "content": "Der Traum der indischen Mittelschicht, den nächsten Anand oder Gukesh großzuziehen, feuert den Schachboom auf dem Subkontinent an. Um für Trainer und Reisen zu Turnieren aufkommen zu können, haben si… [+4109 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Samantha Stokes,Ben Bergman,Leena Rao,Melia Russell,Rebecca Torrence",
+      "title": "Meet 45 rising stars of the venture capital industry who stood out in 2024",
+      "description": "Meet the top emerging venture capitalists of 2024, spotlighting key VCs from diverse backgrounds and sectors, including AI, healthcare, and fintech.",
+      "url": "https://www.businessinsider.com/rising-stars-of-the-venture-capital-industry-2024-12",
+      "urlToImage": "https://i.insider.com/674f44a3e45a68623a2796ca?width=1200&format=jpeg",
+      "publishedAt": "2024-12-04T10:00:02Z",
+      "content": "From left to right: Jon Chu, Caroline Fiegel, Deedy Das, and Iris Sun.Khosla Ventures; Salesforce Ventures; Menlo Ventures; 500 Global; Business Insider\r\n<ul><li>We asked our readers and top VCs to n… [+42062 chars]"
+    },
+    {
+      "source": {
+        "id": "cbc-news",
+        "name": "CBC News"
+      },
+      "author": null,
+      "title": "New world chess champion is 18-year-old Gukesh Dommaraju from India",
+      "description": "Teenager Gukesh Dommaraju of India became the youngest chess world champion by beating defending champion Ding Liren of China on Thursday in a dramatic turn of events in the last game of a 14-game match in Singapore.",
+      "url": "https://www.cbc.ca/news/world/world-chess-champion-dommaraju-1.7408534",
+      "urlToImage": "https://i.cbc.ca/1.7408563.1734017626!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_1180/2188882047.jpg?im=Resize%3D620",
+      "publishedAt": "2024-12-12T16:10:51Z",
+      "content": "Teenager Gukesh Dommaraju of India became the youngest chess world champion by beating defending champion Ding Liren of China on Thursday in a dramatic turn of events in the last game of a 14-game ma… [+2342 chars]"
+    },
+    {
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "author": "Brittany Chang",
+      "title": "I sailed on Royal Caribbean's latest mega-ship. It's overwhelming, but great for cruise-curious travelers.",
+      "description": "I spent three nights on Royal Caribbean's latest mega-ship. I found it to be perfect for cruise newbies and families.",
+      "url": "https://www.businessinsider.com/royal-caribbean-new-utopia-seas-cruise-ship-review-experience-2024-12",
+      "urlToImage": "https://i.insider.com/675c97ad52dd0818d1a72ce5?width=1200&format=jpeg",
+      "publishedAt": "2024-12-18T14:43:25Z",
+      "content": "Utopia of the Seas' short itineraries appeal to first-time cruisers and Royal Caribbean guests.Brittany Chang/Business Insider\r\n<ul><li>I spent three nights on Royal Caribbean's new Utopia of the Sea… [+9695 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "String figures shed light on cultural connections and the roots of mathematical reasoning",
+      "description": "New research suggests that the making of string figures, a globally documented practice, may point to shared cultural heritage stretching back millennia. The research offers a new way to investigate the evolution and distribution of cultural phenomena using m…",
+      "url": "https://www.sciencedaily.com/releases/2024/12/241217131333.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/scidaily-icon.png",
+      "publishedAt": "2024-12-17T18:13:33Z",
+      "content": "New research suggests that the making of string figures, a globally documented practice, may point to shared cultural heritage stretching back millennia. The research offers a new way to investigate … [+2710 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Psychology Today"
+      },
+      "author": "Max Louwerse Ph.D.",
+      "title": "How Human Hubris Beats Artificial Intelligence",
+      "description": "Can AI be smarter than humans? The question may never be answered, not because of AI's limitations, but because we humans keep moving the finish line of intelligence.",
+      "url": "https://www.psychologytoday.com/intl/blog/keeping-those-words-in-mind/202412/how-human-hubris-beats-artificial-intelligence",
+      "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2024-12/Gemini_Generated_Image_3431gc3431gc3431.jpg?itok=2XtnY6b_",
+      "publishedAt": "2024-12-19T21:14:17Z",
+      "content": "\"AI might become smarter than us!\" \"AI is already smarter than us!\"\r\nTodays media is inundated with claims about AI being smarter than humans or that if it is not yet, it will be soon. It is an odd c… [+4517 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Futilitycloset.com"
+      },
+      "author": "Greg Ross",
+      "title": "Checkless Chess",
+      "description": "In checkless chess it’s illegal to give check without giving checkmate. This changes the whole complexion of the game. T.R. Dawson published this example in Die Welt in 1951. White is to mate in two moves. The answer, 1. f6, threatens 2. Qf5, which strangely …",
+      "url": "https://www.futilitycloset.com/2024/12/23/checkless-chess/",
+      "urlToImage": "https://www.futilitycloset.com/wp-content/uploads/2024/12/2024-12-23-checkless-chess.png",
+      "publishedAt": "2024-12-23T18:15:04Z",
+      "content": "In checkless chess it’s illegal to give check without giving checkmate. This changes the whole complexion of the game. T.R. Dawson published this example in Die Welt in 1951. White is to mate in two … [+861 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "/FILM"
+      },
+      "author": "staff@slashfilm.com (Jeremy Smith)",
+      "title": "Rotten Tomatoes Users Think This Is The Worst Christopher Nolan Movie",
+      "description": "Christopher Nolan has a consistently strong filmography, where even his worst ranked film on Rotten Tomatoes is better than a majority of films in existence.",
+      "url": "https://www.slashfilm.com/1745643/christopher-nolan-rotten-tomatoes-users-worst-movie-tenet/",
+      "urlToImage": "https://www.slashfilm.com/img/gallery/rotten-tomatoes-users-think-this-is-the-worst-christopher-nolan-movie/l-intro-1734984090.jpg",
+      "publishedAt": "2024-12-24T13:45:00Z",
+      "content": "According to Rotten Tomatoes, Nolan's most poorly reviewed feature is 2020's \"Tenet,\" the sci-fi/action epic that is to date his biggest box-office disappointment  but with an asterisk considering th… [+1480 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Ritholtz.com"
+      },
+      "author": "Barry Ritholtz",
+      "title": "10 Sunday Reads",
+      "description": "Avert your eyes! My Sunday morning look at incompetency, corruption and policy failures: • It’s Time to Break Up Big Medicine: UnitedHealth Group is not an insurer, it’s a platform. And it’s in the crosshairs as Elizabeth Warren and Josh Hawley propose breaki…",
+      "url": "https://ritholtz.com/2024/12/sunday-reads-398/",
+      "urlToImage": "https://ritholtz.com/wp-content/uploads/2026/12/housingproblem.png",
+      "publishedAt": "2024-12-15T11:30:33Z",
+      "content": "It’s Time to Break Up Big Medicine: UnitedHealth Group is not an insurer, it’s a platform. And it’s in the crosshairs as Elizabeth Warren and Josh Hawley propose breaking it apart, severing its pharm… [+2465 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deadline"
+      },
+      "author": "Denise Petski",
+      "title": "‘Parasite’ Star Song Kang-Ho Joins ‘Beef’ Season 2 Cast",
+      "description": "EXCLUSIVE: Parasite star Song Kang-Ho has signed on to the Season 2 cast of Netflix anthology series Beef in a recurring role, joining previously announced Carey Mulligan, Oscar Isaac, Charles Melton, Cailee Spaeny and Youn Yuh-jung.  In Season 2, a young cou…",
+      "url": "http://deadline.com/2024/12/song-kang-ho-cast-beef-season-2-netflix-1236238181/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2024/12/Song-Kang-Ho.jpg?w=1024",
+      "publishedAt": "2024-12-19T20:00:00Z",
+      "content": "EXCLUSIVE: Parasite star Song Kang-Ho has signed on to the Season 2 cast of Netflix anthology seriesBeef as a guest star, joining previously announced Carey Mulligan, Oscar Isaac, Charles Melton, Cai… [+1453 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "PC Gamer"
+      },
+      "author": "Rich Stanton",
+      "title": "Chess is now an esport as Esports World Cup adds the 1,500 year-old game to 2025 event, calls it 'the perfect example of how games evolve'",
+      "description": "And Magnus Carlsen is \"thrilled\" to be on board.",
+      "url": "https://www.pcgamer.com/games/chess-is-now-an-esport-as-esports-world-cup-adds-the-1-500-year-old-game-to-2025-event-calls-it-the-perfect-example-of-how-games-evolve/",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/dcfppdWrfYUatzVbFh3L9H-1200-80.jpg",
+      "publishedAt": "2024-12-17T22:14:55Z",
+      "content": "The Esports World Cup (EWC) has announced a surprising new addition to its lineup of games for the 2025 event: Chess. The game of kings, the origins of which can be traced back 1,500 years, will now … [+3869 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Microsiervos.com"
+      },
+      "author": "alvy@microsiervos.com (Alvy)",
+      "title": "Fragment: un juego de palabras que es una especie de cruce entre crucigramas, Wordles y puzles",
+      "description": "Hacía tiempo que no veíamos un juego nuevo de piezas, letras y palabras con la sencillez de Fragment. La premisa es sencilla: colocar las piezas sobre el tablero de modo que se formen palabras válidas. Cualquier pieza que esté en contacto con otra ha de tener…",
+      "url": "https://www.microsiervos.com/archivo/juegos-y-diversion/fragment-juego-palabras-crucigramas-wordles-puzles.html",
+      "urlToImage": "https://img.microsiervos.com/images2024/Fragment.jpg",
+      "publishedAt": "2024-12-10T12:43:58Z",
+      "content": "Por @Alvy 10 de diciembre de 2024\r\nHacía tiempo que no veíamos un juego nuevo de piezas, letras y palabras con la sencillez de Fragment. La premisa es sencilla: colocar las piezas sobre el tablero de… [+2614 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Xataka.com"
+      },
+      "author": "Carlos Prego",
+      "title": "Un Gran Maestro de ajedrez chino perdió el mundial tras un error infantil. Rusia tiene preguntas y un cabreo considerable",
+      "description": "El torneo mundial de ajedrez que acaba de disputarse en Singapur amenaza con provocar fricciones más allá del tablero entre China y Rusia con la India de por medio. Suena extraño, pero ese es uno de los efectos que ha tenido la sorprendente victoria de Gukesh…",
+      "url": "https://www.xataka.com/magnet/mundial-ajedrez-amenaza-acabar-pelea-china-rusia-e-india-motivo-error-increible",
+      "urlToImage": "https://i.blogs.es/a0aa92/54188963375_8d366b816f_k/840_560.jpeg",
+      "publishedAt": "2024-12-13T17:30:37Z",
+      "content": "El torneo mundial de ajedrez que acaba de disputarse en Singapur amenaza con provocar fricciones más allá del tablero entre China y Rusia con la India de por medio. Suena extraño, pero ese es uno de … [+6503 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Digital Trends"
+      },
+      "author": "Sam Hill",
+      "title": "NYT Crossword: answers for Sunday, December 15",
+      "description": "The New York Times crossword puzzle can be tough! If you're stuck, we're here to help with a list of today's clues and answers.",
+      "url": "https://www.digitaltrends.com/gaming/nyt-crossword-answers-december-15/",
+      "urlToImage": "https://www.digitaltrends.com/wp-content/uploads/2024/06/nyt-crossword-logo.jpg?resize=1200%2C630&p=1",
+      "publishedAt": "2024-12-15T13:30:13Z",
+      "content": "The New York Times has plenty of word games on its roster today — with Wordle, Connections, Strands, and the Mini Crossword, there’s something for everyone — but the newspaper’s standard crossword pu… [+5021 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Caltech.edu"
+      },
+      "author": null,
+      "title": "The Paradoxical Slowness of Human Behavior",
+      "description": "A new Caltech study quantifies the speed of human thought processes and finds that we think, remember, and process remarkably slowly.",
+      "url": "https://www.caltech.edu/about/news/thinking-slowly-the-paradoxical-slowness-of-human-behavior",
+      "urlToImage": "https://caltech-prod.s3.amazonaws.com/main/images/Decade-in-Review-01-Understanding-the-Brain-67.width-600.png",
+      "publishedAt": "2024-12-18T14:46:12Z",
+      "content": "Caltech researchers have quantified the speed of human thought: a rate of 10 bits per second. However, our bodies' sensory systems gather data about our environments at a rate of a billion bits per s… [+3790 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Upenn.edu"
+      },
+      "author": "Mark Liberman",
+      "title": "More AI satire",
+      "description": "OpenAI comms: [underspecific hype-y 'big tings coming!!' pls like and subscribe] Google comms: [corporate vagueness about Gemini3-0011 v2 FINAL.docx on Vertex available to 14 users] GDM comms: [we have simulated a rat's brain capable of solving 4D chess, but …",
+      "url": "https://languagelog.ldc.upenn.edu/nll/?p=67210",
+      "urlToImage": null,
+      "publishedAt": "2024-12-05T17:54:51Z",
+      "content": "« previous post | \r\nOpenAI comms: [underspecific hype-y 'big tings coming!!' pls like and subscribe]Google comms: [corporate vagueness about Gemini3-0011 v2 FINAL.docx on Vertex available to 14 users… [+1270 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thewallanalysis.com"
+      },
+      "author": null,
+      "title": "Pink Floyd's 'The Wall': A Complete Analysis",
+      "description": "Just another WordPress site",
+      "url": "https://thewallanalysis.com/",
+      "urlToImage": null,
+      "publishedAt": "2024-12-12T20:22:03Z",
+      "content": "P\r\nink Floyd’s the Wall is one of the most intriguing and imaginative albums in the history of rock music. Since the studio album’s release in 1979, the tour of 1980-81, and the subsequent movie of 1… [+4181 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNA"
+      },
+      "author": null,
+      "title": "Coffee-fired Ding levels world chess championsip score",
+      "description": "SINGAPORE: Defending champion Ding Liren bounced back strongly Monday (Dec 9) to beat his teenage challenger in the 12th game and level the score in the homestretch of their World Chess Championsh",
+      "url": "https://www.channelnewsasia.com/singapore/world-chess-championship-singapore-india-china-gukesh-ding-4796886",
+      "urlToImage": "https://onecms-res.cloudinary.com/image/upload/s--HJLkoF-G--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/mediacorp/cna/image/2024/11/26/JEM_0092.jpg?itok=P4r-PGq0",
+      "publishedAt": "2024-12-09T21:08:05Z",
+      "content": "But it was not to be, and he will have to wait, with two more games to be played on Wednesday and Thursday after a rest day on Tuesday.\"Obviously, it's not pleasant to lose this game,\" said a dejecte… [+715 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "author": "Reuters",
+      "title": "Aussie bourse operator ASX to defer settlements after CHESS software outage",
+      "description": "The stock exchange operator said that it was receiving trades from approved market operators, but demand and registry transaction processing have been put on...",
+      "url": "https://finance.yahoo.com/news/aussie-bourse-operator-asx-defer-090623943.html",
+      "urlToImage": "https://media.zenfs.com/en/reuters-finance.com/9d885b932b64055aee82cf72b9df7ba9",
+      "publishedAt": "2024-12-20T09:06:23Z",
+      "content": "(Reuters) - Australian bourse operator ASX will defer the day's settlements to Monday after its Clearing House Electronic Subregister System (CHESS) software broke down and it was unable to resolve i… [+1355 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Martin Lasalle",
+      "title": "How much faster is a knight than a king? A mathematical study reveals the exact ratio",
+      "description": "We know a knight can move across the chessboard faster than the king, but exactly how much faster? Christian Táfula Santos, a doctoral student in UdeM's Department of Mathematics, has done the math and his proof has been published on the pre-print server arXi…",
+      "url": "https://phys.org/news/2024-12-faster-knight-king-mathematical-reveals.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2017/chess.jpg",
+      "publishedAt": "2024-12-12T14:44:25Z",
+      "content": "We know a knight can move across the chessboard faster than the king, but exactly how much faster? Christian Táfula Santos, a doctoral student in UdeM's Department of Mathematics, has done the math a… [+3076 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Openculture.com"
+      },
+      "author": "Colin Marshall",
+      "title": "Arthur C. Clarke Predicts the Rise of Artificial Intelligence & Questions What Will Happen to Humanity (1978)",
+      "description": "We now live in the midst of an artificial-intelligence boom, but it’s hardly the first of its kind. In fact, the field has been subject to a boom-and-bust cycle since at least the early nineteen-fifties. Eventually, those busts — which occurred when realizabl…",
+      "url": "https://www.openculture.com/2024/12/arthur-c-clarke-predicts-the-rise-of-artificial-intelligence-questions-what-will-happen-to-humanity-1978.html",
+      "urlToImage": "https://cdn8.openculture.com/2024/12/08222214/This-Sci-Fi-Author-Predicted-a-Computer-Dominated-Future-1024x576.jpg",
+      "publishedAt": "2024-12-09T10:00:49Z",
+      "content": "We now live in the midst of an arti­fi­cial-intel­li­gence boom, but its hard­ly the first of its kind. In fact, the field has been sub­ject to a boom-and-bust cycle since at least the ear­ly nine­te… [+3163 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Vedomosti.ru"
+      },
+      "author": "Антон Смоленцев",
+      "title": "Как 18-летний Гукеш Доммараджу стал самым молодым чемпионом мира по шахматам",
+      "description": "Индийский гроссмейстер обыгрывал Магнуса Карлсена еще в 16 лет",
+      "url": "https://www.vedomosti.ru/sport/others/articles/2024/12/13/1081370-kak-18-letnii-gukesh-dommaradzhu-stal-samim-molodim-chempionom-mira-po-shahmatam",
+      "urlToImage": "https://sharing.vedomosti.ru/1734112813/vedomosti.ru/sport/others/articles/2024/12/13/1081370-kak-18-letnii-gukesh-dommaradzhu-stal-samim-molodim-chempionom-mira-po-shahmatam.jpg",
+      "publishedAt": "2024-12-13T18:00:12Z",
+      "content": "12 18- (), 7,5:6,5. ( ), 1985 . 22 .\r\n« , . . , 10 . , , . (). , - . , . , . . », - .\r\n18- , , (2007-2013 .). $2,5 , 18- $1,35 . «. » .\r\n29 2006 . , , 15- . , -, , , , , . , .\r\nBBC , 2013 . , . . , ,… [+272 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "[Removed]"
+      },
+      "author": null,
+      "title": "[Removed]",
+      "description": "[Removed]",
+      "url": "https://removed.com",
+      "urlToImage": null,
+      "publishedAt": "2024-11-28T19:59:22Z",
+      "content": "[Removed]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "John Brandon, Senior Contributor, \n John Brandon, Senior Contributor\n https://www.forbes.com/sites/johnbbrandon/",
+      "title": "These Holiday Treats Are The Most Instagram-Worthy Products This Season",
+      "description": "Finding holiday products to feature on your Instagram feed or other social media channels just got easier.",
+      "url": "https://www.forbes.com/sites/johnbbrandon/2024/12/19/these-holiday-treats-are-the-most-instagram-worthy-products-this-season/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/5fdd082b6f3024100fa68d28/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-12-19T16:41:14Z",
+      "content": "Christmas table scene of assorted sweets and cookies. Top view over a rustic wood background. ... [+] Holiday baking concept.\r\ngetty\r\nFinding holiday products to feature on your Instagram feed or oth… [+2972 chars]"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": null,
+      "title": "Teen chess prodigy becomes youngest world champion",
+      "description": "The usually shy and reserved teen burst into tears after nearly three weeks and 14 games of intense battle against his opponent.",
+      "url": "https://www.cbsnews.com/news/chess-youngest-world-champion-gukesh-dommaraju-india/",
+      "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/12/12/59aa2024-136f-427e-b986-51417f0ef5f7/thumbnail/1200x630g6/c519f8206e02db9990c99fb2fba79c34/gettyimages-2188905178.jpg?v=564e83c5974b3893ba1bcac5fe5947af",
+      "publishedAt": "2024-12-12T16:31:44Z",
+      "content": "India on Thursday hailed chess prodigy Gukesh Dommaraju after the 18-year-old became the youngest world champion with a thrilling final win over China's Ding Liren.\r\nGukesh surpassed a record held by… [+2730 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MobileSyrup"
+      },
+      "author": "Dean Daley",
+      "title": "Play chess with AI-generated pieces from Google",
+      "description": "Google has launched a new chess website, which uses custom pieces created by generative AI. GenChess uses Imagen 3 to let users create chess pieces by typing a short description. You can generate pieces for yourself and your opponent, and you can make them lo…",
+      "url": "https://mobilesyrup.com/2024/11/28/google-releases-ai-generated-pieces-chess-game/",
+      "urlToImage": "https://cdn.mobilesyrup.com/wp-content/uploads/2024/11/gen-ai-chess.jpg",
+      "publishedAt": "2024-11-28T16:10:28Z",
+      "content": "Google has launched a new chess website, which uses custom pieces created by generative AI. GenChess uses Imagen 3 to let users create chess pieces by typing a short description. You can generate pie… [+1202 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Dealcatcher.com"
+      },
+      "author": null,
+      "title": "The Chess Store - 20% Off Everything",
+      "description": "Enjoy 20% off storewide and free shipping on orders over $100! Treat yourself to amazing deals and elevate your shopping experience today. Don't miss out on these fantastic savings!",
+      "url": "https://www.dealcatcher.com/?offer=998348041",
+      "urlToImage": "https://www.dealcatcher.com/__og-image__/image/og.png?_query=%7B%22offer%22:%22998348041%22,%22utm_source%22:%22rss%22%7D",
+      "publishedAt": "2024-12-05T00:00:00Z",
+      "content": "Check out today's hottest new deals! We've scoured the web to bring you deep discounts from top retailers and brands. From electronics to kitchen appliances and apparel, our deals are sure to help yo… [+57 chars]"
+    },
+    {
+      "source": {
+        "id": "rt",
+        "name": "RT"
+      },
+      "author": "RT",
+      "title": "Indian chess player becomes youngest world champion ever",
+      "description": "Chess prodigy Gukesh Dommaraju has become the second Indian to win the world title after defeating China’s Ding Liren Read Full Article at RT.com",
+      "url": "https://www.rt.com/india/609266-chess-world-champion-gukesh-india/",
+      "urlToImage": "https://mf.b37mrtl.ru/files/2024.12/article/675aff2e2030275dbb7f5d36.jpg",
+      "publishedAt": "2024-12-12T15:23:27Z",
+      "content": "India’s 18-year-old chess prodigy, Gukesh Dommaraju, has become the youngest world champion ever after defeating defending champion Ding Liren in a gripping final held in Singapore. \r\nGukesh, who was… [+1913 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thenation.com"
+      },
+      "author": "J.C. Hallman",
+      "title": "The Drama and Suffering of the World Chess Championship",
+      "description": "J.C. Hallman\n\n\n\nA dispatch from the pivotal Game 11 in Singapore that helped make Gukesh Dommaraju an 18-year-old chess champion.\r\n\n\r\n\n\nThe post The Drama and Suffering of the World Chess Championship appeared first on The Nation.",
+      "url": "https://www.thenation.com/article/society/fide-world-chess-championship-ding-liren-gukesh-dommaraju/",
+      "urlToImage": "https://www.thenation.com/wp-content/uploads/2024/12/FIDE-world-chess-championship-sentosa-getty.jpg",
+      "publishedAt": "2024-12-27T10:00:00Z",
+      "content": "Society / December 27, 2024\r\nA dispatch from the pivotal Game 11 in Singapore that helped make Gukesh Dommaraju an 18-year-old chess champion.\r\nEdit\r\nAd Policy\r\nDing Liren, top right, and Gukesh Domm… [+24786 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hackaday"
+      },
+      "author": "Jonathan Bennett",
+      "title": "Finally Putting the RK1 Through its Paces",
+      "description": "The good folks at Turing Pi sent me a trio of RK1 modules to put through their paces, to go along with the single unit I bought myself. And the TLDR, if you need some real ARM processing power, and…",
+      "url": "https://hackaday.com/2024/12/09/finally-putting-the-rk1-through-its-paces/",
+      "urlToImage": "https://hackaday.com/wp-content/uploads/2022/06/TuringPi.jpg",
+      "publishedAt": "2024-12-09T15:00:41Z",
+      "content": "The good folks at Turing Pi sent me a trio of RK1 modules to put through their paces, to go along with the single unit I bought myself. And the TLDR, if you need some real ARM processing power, and d… [+9948 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Eater"
+      },
+      "author": "Francky Knapp",
+      "title": "Gloriously Horny Milk Is the Unexpected Star of ‘Babygirl’",
+      "description": "The erotic thriller uses dairy as a sexual chess piece.",
+      "url": "https://www.eater.com/24328056/babygirl-nicole-kidman-milk-fetish",
+      "urlToImage": "https://cdn.vox-cdn.com/thumbor/2ampxdOb_LhaV1Byz8QPtE63PYI=/0x106:1500x891/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25803238/Babygirl_Milk_Blog.jpg",
+      "publishedAt": "2024-12-23T18:00:00Z",
+      "content": "Babygirl is in theaters December 25. | Photo illustration by Francky Knapp; see below for full credits\r\n\n \n\n Nicole Kidman’s new erotic thriller uses dairy as a sexual chess piece In a huge win for B… [+4421 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Week Magazine"
+      },
+      "author": "theweekonlineeditorsuk@futurenet.com (Chas Newkey-Burden, The Week UK)",
+      "title": "Chennai's chess champions",
+      "description": "The Indian city is 'churning out' a huge number of chess 'wizards' and 'geniuses'",
+      "url": "https://theweek.com/sports/chennais-chess-champions",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/KkgZAuRiCeffjSSTV7BTHe-1200-80.jpg",
+      "publishedAt": "2024-12-17T10:42:15Z",
+      "content": "Indian teenager Gukesh Dommaraju has become the youngest ever world chess champion, deepening the \"love affair between Indians and chess\", said The Hindu.\r\nChess has been \"around for millennia\" and i… [+2953 chars]"
+    },
+    {
+      "source": {
+        "id": "new-scientist",
+        "name": "New Scientist"
+      },
+      "author": "Matthew Sparkes",
+      "title": "DeepMind AI predicts weather more accurately than existing forecasts",
+      "description": "The latest weather forecasting AI model from Google DeepMind can beat the leading providers more than 97 per cent of the time, and it is quicker and cheaper to run",
+      "url": "https://www.newscientist.com/article/2458465-deepmind-ai-predicts-weather-more-accurately-than-existing-forecasts/",
+      "urlToImage": "https://images.newscientist.com/wp-content/uploads/2024/12/03142925/SEI_231789094.jpg",
+      "publishedAt": "2024-12-04T16:00:48Z",
+      "content": "Today’s weather forecasts rely on simulations that require a lot of computing power\r\nPetrovich9/Getty Images/iStockphoto\r\nGoogle DeepMind claims its latest weather forecasting AI can make predictions… [+5067 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "author": "ABC News",
+      "title": "'A proud moment for India': Tears flow for youngest chess world champion",
+      "description": "India's Gukesh Dommaraju beats China's Ding Liren to become the youngest chess world champion in history.",
+      "url": "https://www.abc.net.au/news/2024-12-13/world-chess-champion-gukesh-dommaraju-youngest-in-history/104720846",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/3abf8b34db6d183abb4a9c211e5d98ca?impolicy=wcms_watermark_news&cropH=2394&cropW=4256&xPos=0&yPos=221&width=862&height=485&imformat=generic",
+      "publishedAt": "2024-12-12T21:03:51Z",
+      "content": "Indian teenager Gukesh Dommaraju became the youngest chess world champion Thursday after beating the defending champion Ding Liren of China in the final match of their series in Singapore.\r\nDommaraju… [+1421 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Vintag.es"
+      },
+      "author": "Unknown",
+      "title": "Vintage Photographs of Humphrey Bogart Playing Chess",
+      "description": "Besides being an amazing actor, Humphrey Bogart was an extremely accomplished chess player, almost of master level. His excellent chess skil...",
+      "url": "https://www.vintag.es/2024/12/humphrey-bogart-playing-chess.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOUs5UGzb6R7qkrYPwIk2xXGqJm9HpxB1ZkAZvqyA6_Krazft8Woak1eCrvnU0H40Audqq3qxJuHg0v7PMMU0pFwgYdfqZQPcpx9BySD6iy9FHGI8LFnvNgdHtNSbVY2eYxNrfFK6gZ7oqietikOFK5wgq3Z6EMMMmMgpyBN3RmJ5L43hgc8UB5I7R9z8/w1200-h630-p-k-no-nu/humphrey-bogart-playing-chess-1.jpg",
+      "publishedAt": "2024-12-25T10:16:00Z",
+      "content": "Besides being an amazing actor, Humphrey Bogart was an extremely accomplished chess player, almost of master level. His excellent chess skills were evidenced by his draw with US Champion Samuel Reshe… [+625 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "Developing artificial intelligence tools for health care",
+      "description": "Reinforcement Learning, an artificial intelligence approach, has the potential to guide physicians in designing sequential treatment strategies for better patient outcomes but requires significant improvements before it can be applied in clinical settings, fi…",
+      "url": "https://www.sciencedaily.com/releases/2024/12/241217201609.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/scidaily-icon.png",
+      "publishedAt": "2024-12-18T01:16:09Z",
+      "content": "Reinforcement Learning, an artificial intelligence approach, has the potential to guide physicians in designing sequential treatment strategies for better patient outcomes but requires significant im… [+5515 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "author": "Joe McKendrick, Senior Contributor, \n Joe McKendrick, Senior Contributor\n https://www.forbes.com/sites/joemckendrick/",
+      "title": "Human-AI Collaboration: Keep The Machines On A Short Leash",
+      "description": "Always keep humans engaged with AI: 'You can’t just put AI on autopilot and expect a favorable outcome'",
+      "url": "https://www.forbes.com/sites/joemckendrick/2024/11/28/human-ai-collaboration-keep-the-machines-on-a-short-leash/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/635b38cb63aefdcfb6876e01/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2024-11-28T18:05:27Z",
+      "content": "Unequal? Balancing human-AI partnerships\r\ngetty\r\nHumans and artificial intelligence dont necessarily work as well together as many assume, a new study suggests. The looming question is what is the po… [+6207 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Vedomosti.ru"
+      },
+      "author": "Антон Смоленцев",
+      "title": "Российских фигуристов допустили к отбору Игр-2026, Овечкин близок к возвращению",
+      "description": "Хоккейное «Динамо» расторгло контракт с американским вратарем",
+      "url": "https://www.vedomosti.ru/sport/others/articles/2024/12/21/1082908-rossiiskih-figuristov-dopustili-k-otboru-igr-2026-ovechkin-blizok-k-vozvrascheniyu",
+      "urlToImage": "https://sharing.vedomosti.ru/1734765612/vedomosti.ru/sport/others/articles/2024/12/21/1082908-rossiiskih-figuristov-dopustili-k-otboru-igr-2026-ovechkin-blizok-k-vozvrascheniyu.jpg",
+      "publishedAt": "2024-12-21T07:03:28Z",
+      "content": "20 (ISU) -2026 . 2022 . . - .\r\n« , ISU, . ISU , ISU. (). », ISU.\r\nISU , ISU. , . , , ISU, , (ITA) (WADA).\r\n, , ISU. . ISU, . , - - -2026.\r\n, () , . . 25 27 . «» : «», «-» «». 29 « ».\r\n«» 19 , . . 13 … [+245 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Quartz India"
+      },
+      "author": "William Gavin",
+      "title": "Elon Musk is feuding with the SEC again, this time over Neuralink",
+      "description": "Elon Musk has reignited his feud with the Securities and Exchange Commission (SEC) in full view of the public as regulators take another look into his brain-chip venture Neuralink. Read more...",
+      "url": "https://qz.com/elon-musk-sec-gary-gensler-neuralink-tesla-twitter-1851720587",
+      "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/5e558d4fc2455c4ca4e63ddbb664dcd6.jpg",
+      "publishedAt": "2024-12-13T15:42:00Z",
+      "content": "Elon Musk has reignited his feud with the Securities and Exchange Commission (SEC) in full view of the public as regulators take another look into his brain-chip venture Neuralink. \r\nThe billionaire,… [+3344 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Week Magazine"
+      },
+      "author": "theweekonlineeditors@futurenet.com (Peter Weber, The Week US)",
+      "title": "Indian teen is youngest world chess champion",
+      "description": "Gukesh Dommaraju, 18, unseated China's Ding Liren",
+      "url": "https://theweek.com/sports/india-gukesh-dommaraju-world-chess-champion",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/qjY45jANcmWiG5ZQi8yR8a-1200-80.jpg",
+      "publishedAt": "2024-12-13T18:46:27Z",
+      "content": "What happened\r\nGukesh Dommaraju, 18, became the youngest chess world champion when he unseated China's Ding Liren at the FIDE World Chess Championship in Singapore Thursday. The Indian prodigy broke … [+1385 chars]"
+    },
+    {
+      "source": {
+        "id": "rt",
+        "name": "RT"
+      },
+      "author": "RT",
+      "title": "Chess King Gukesh: How an 18-year-old dreamer checkmated the world",
+      "description": "Grandmaster Vishy Anand’s role in developing a new breed of Indian players like Gukesh Dommaraju and R Praggnanandhaa can’t be overstated Read Full Article at RT.com",
+      "url": "https://www.rt.com/india/609547-india-gukesh-world-champion/",
+      "urlToImage": "https://mf.b37mrtl.ru/files/2024.12/article/6763c1e82030276ba065db54.jpg",
+      "publishedAt": "2024-12-19T12:26:31Z",
+      "content": "What dreams can an eight-year-old boy harbor? Perhaps a new video game, a favorite toy, or a cherished destination. At most, an autograph or selfie with a beloved sports star. But young Gukesh Dommar… [+10280 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Marketingdirecto.com"
+      },
+      "author": "Esther Lastra",
+      "title": "La creatividad «made in Spain» atrapa un botín de 17 metales en Eurobest 2024",
+      "description": "España ha logrado atrapar 17 galardones (5 oros, 6 platas y 6 bronces) en la última edición de Eurobest, que el próximo miércoles desvelará los Grand Prix.\nLa entrada La creatividad «made in Spain» atrapa un botín de 17 metales en Eurobest 2024 se publicó pri…",
+      "url": "https://www.marketingdirecto.com/marketing-general/eventos-y-formacion/creatividad-made-spain-atrapa-botin-metales-eurobest",
+      "urlToImage": "https://www.marketingdirecto.com/wp-content/uploads/2024/12/cornetto-unwrap-it.jpg",
+      "publishedAt": "2024-12-09T11:54:30Z",
+      "content": "España ha logrado atrapar 17 galardones (5 oros, 6 platas y 6 bronces) en la última edición de Eurobest, que el próximo miércoles desvelará los Grand Prix.España ha hecho gala de su fulgor creativo e… [+4031 chars]"
+    },
+    {
+      "source": {
+        "id": "die-zeit",
+        "name": "Die Zeit"
+      },
+      "author": "ZEIT ONLINE: Sport - Ulrich Stock",
+      "title": "Schach-WM: Drei Wochen auf 64 Feldern, und dann der Kater",
+      "description": "Schach von nachmittags bis in die Nacht – und das jähe Ende in Runde 14. Nach dem Duell in Singapur sind nicht nur der neue und der alte Weltmeister erschöpft.",
+      "url": "https://www.zeit.de/sport/2024-12/schach-wm-gukesh-ding-liren-singapur",
+      "urlToImage": "https://img.zeit.de/sport/2024-12/schach-wm-gukesh-ding-liren-singapur-bild/wide__1300x731",
+      "publishedAt": "2024-12-15T14:38:17Z",
+      "content": "Wer als\r\nReporter schon etliche Schachweltmeisterschaften miterlebt und -erlitten hat,\r\nkennt natürlich dieses Loch, das sich am Ende des Duells plötzlich auftut. Wenn\r\ndie Entscheidung gefallen ist,… [+4777 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "DW (English)"
+      },
+      "author": "Deutsche Welle",
+      "title": "India's Gukesh becomes world's youngest chess champion",
+      "description": "The match seemed to be heeded to a tie, but Gukesh Dommaraju snatched victory with black pieces after China's Ding Liren made a blunder on his 55th move.",
+      "url": "https://www.dw.com/en/indias-gukesh-becomes-worlds-youngest-chess-champion/a-71038565",
+      "urlToImage": "https://static.dw.com/image/71038148_6.jpg",
+      "publishedAt": "2024-12-12T15:24:00Z",
+      "content": "India's Gukesh Dommaraju became the world's youngest chess champion on Thursday.\r\nHe achieved the title after defeating China's Ding Liren in the final match of their series in Singapore.\r\nWho is tee… [+1697 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Week Magazine"
+      },
+      "author": "theweekonlineeditors@futurenet.com (Catherine Garcia, The Week US)",
+      "title": "Explore new worlds this winter at these enlightening museum exhibitions",
+      "description": "Discover the estrados of Spain and the connection between art and chess in various African countries",
+      "url": "https://theweek.com/culture-life/best-winter-museum-exhibitions",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/JsrMXrtC5Taq4ej2wUPfkm-1200-80.jpg",
+      "publishedAt": "2024-12-26T09:00:00Z",
+      "content": "One way to keep warm this winter is by seeking refuge in a museum. Safe from the elements, it is easy to while away the day taking in the permanent collections. If you visit one of these six museums,… [+5369 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Champion.com.ua"
+      },
+      "author": "Українська правда",
+      "title": "Карлсен, Іванчук та інші: головні фаворити чемпіонату світу з рапіду та бліцу",
+      "description": "",
+      "url": "https://champion.com.ua/ukr/chess/chempionat-svitu-z-rapidu-ta-blicu-z-shahiv-karlsen-ivanchuk-sestri-muzichuk-ta-inshi-uchasniki-turniru-1021226/",
+      "urlToImage": "https://static.champion.com.ua/champion/images/doc/c/b/185635/cbd85c02a11f33f9358558053ea42ede.jpeg?q=90&w=1920",
+      "publishedAt": "2024-12-24T19:52:21Z",
+      "content": ", , .\r\n 184 115 . .\r\n , .\r\n(2830 )\r\n . , . 34- .\r\n , 60 , .\r\n (2738)\r\n , , , , .\r\n 15 , 2019 2019 . , Grand Chess Tour 2022 .\r\n , .\r\n (2770)\r\n , , .\r\n , . , . , .\r\n (2805)\r\n , . 2018 , .\r\n Superbet C… [+381 chars]"
+    },
+    {
+      "source": {
+        "id": "nbc-news",
+        "name": "NBC News"
+      },
+      "author": "Mithil Aggarwal",
+      "title": "India's Gukesh Dommaraju crowned world champion of chess, the youngest ever",
+      "description": "Gukesh Dommaraju became the youngest world chess champion on Thursday after beating reigning champion Ding Liren in the final match of the World Chess Championship in Singapore.",
+      "url": "https://www.nbcnews.com/news/world/india-gukesh-dommaraju-world-champion-chess-youngest-ever-rcna183913",
+      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2024-12/241212-chess-mb-1123-943742.jpg",
+      "publishedAt": "2024-12-12T14:39:43Z",
+      "content": "Gukesh Dommaraju became the youngest world chess champion on Thursdayafter beating reigning champion Ding Liren in the final match of the World Chess Championship in Singapore.\r\nThe 18-year-old prodi… [+2522 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Geeky Gadgets"
+      },
+      "author": "Julian Horsey",
+      "title": "Real-Time Chess: The Future of Strategy and Speed Combined",
+      "description": "If you are feeling the urge to play chess with all the buzz about the 2024 FIDE World Championships underway or looking to upgrade your current chef sent to something a little different. You might be interested in this real-time chest set that removes the mov…",
+      "url": "https://www.geeky-gadgets.com/real-time-chess/",
+      "urlToImage": "https://www.geeky-gadgets.com/wp-content/uploads/2024/12/real-time-chess-gameplay-strategy.jpg",
+      "publishedAt": "2024-12-03T10:49:52Z",
+      "content": "If you are feeling the urge to play chess with all the buzz about the 2024 FIDE World Championships underway or looking to upgrade your current chef sent to something a little different. You might be… [+6841 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "[Removed]"
+      },
+      "author": null,
+      "title": "[Removed]",
+      "description": "[Removed]",
+      "url": "https://removed.com",
+      "urlToImage": null,
+      "publishedAt": "2024-12-13T06:30:20Z",
+      "content": "[Removed]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googlewatchblog.de"
+      },
+      "author": "Jens",
+      "title": "Gemini wird zum Schachcomputer: Neuer Gems-Bot bringt in Kürze umfangreiche Schach-Funktionen",
+      "description": "Google spendiert der KI-Plattform Gemini immer wieder neue Funktionen und schon im Dezember soll eine interessante Erweiterung starten, mit der sich gewissermaßen ein Kreis schließt: Gemini soll einen eigenen Gem-ChatBot für Schach erhalten, der den Nutzern u…",
+      "url": "https://www.googlewatchblog.de/2024/11/gemini-wird-zum-schachcomputer-neuer-gems-bot-bringt-in-kuerze-umfangreiche-schach-funktionen/",
+      "urlToImage": "https://www.googlewatchblog.de/wp-content/uploads/gemini-schach.jpg",
+      "publishedAt": "2024-11-28T16:01:51Z",
+      "content": "Google spendiert der KI-Plattform Gemini immer wieder neue Funktionen und schon im Dezember soll eine interessante Erweiterung starten, mit der sich gewissermaßen ein Kreis schließt: Gemini soll eine… [+2580 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Raw Story"
+      },
+      "author": "Agence France-Presse",
+      "title": "Indian chess king Gukesh returns to hero's welcome",
+      "description": "India's chess star Gukesh Dommaraju returned to a hero's welcome in his home city on Monday after becoming the youngest world champion aged only 18.Hundreds of fans crowded the arrivals area of Chennai airport, cheering alongside banks of television cameras a…",
+      "url": "https://www.rawstory.com/indian-chess-king-gukesh-returns-to-hero-s-welcome/",
+      "urlToImage": "https://www.rawstory.com/media-library/india-s-gukesh-dommaraju-returned-to-a-hero-s-welcome-in-his-home-city-on-monday-r-satish-babu-afp.jpg?id=55345948&width=1200&height=600&coordinates=0%2C60%2C0%2C61",
+      "publishedAt": "2024-12-16T11:05:36Z",
+      "content": "India's chess star Gukesh Dommaraju returned to a hero's welcome in his home city on Monday after becoming the youngest world champion aged only 18.\r\nHundreds of fans crowded the arrivals area of Che… [+2578 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Screen Rant"
+      },
+      "author": "Ben Gibbons",
+      "title": "Anya Taylor-Joy's New Horror Movie Perfectly References Her Iconic Netflix Role From 4 Years Ago",
+      "description": "Anya Taylor-Joy's new film explores a connection to another popular project from the young actress in the trailer, and the link goes deep.",
+      "url": "https://screenrant.com/anya-taylor-joy-the-gorge-chess-scene-queens-gambit/",
+      "urlToImage": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/12/anya-taylor-joy-s-new-horror-movie-perfectly-references-her-iconic-netflix-role-from-4-years-ago.jpg",
+      "publishedAt": "2024-12-12T11:20:18Z",
+      "content": "Anya Taylor-Joy is set to star in a new action thriller film on Apple TV+ called The Gorge, and the trailer offers a brief but perfect callback to her earlier streaming role for Netflix. Taylor-Joy's… [+3375 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Mental Floss"
+      },
+      "author": "Ellen Gutoskey",
+      "title": "9 Expert Tips for Jigsaw Puzzling",
+      "description": "Elms Puzzles experts can help you take your puzzle game to the next level.",
+      "url": "https://www.mentalfloss.com/jigsaw-puzzle-expert-tips-strategy",
+      "urlToImage": "https://images2.minutemediacdn.com/image/upload/c_crop,w_3600,h_2025,x_0,y_59/v1733228701/images/voltaxMediaLibrary/mmsport/mentalfloss/01je67nz1tr5r9krhv14.jpg",
+      "publishedAt": "2024-12-11T13:03:00Z",
+      "content": "When it comes to analog hobbies, the humble jigsaw puzzle is one of lifes greatest choose-your-own-adventure options. You can do it solo or with friends. You can make it cooperative or competitive. Y… [+14268 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNA"
+      },
+      "author": null,
+      "title": "Indian teen Gukesh Dommaraju beats China's Ding to become youngest world chess champion",
+      "description": "Teenager Gukesh Dommaraju of India became the youngest chess world champion by beating defending champion Ding Liren of China on Thursday (Dec 12) in a dramatic turn of events in the last game of a",
+      "url": "https://www.channelnewsasia.com/sport/world-chess-championship-gukesh-dommaraju-beats-ding-youngest-winner-4803281",
+      "urlToImage": "https://onecms-res.cloudinary.com/image/upload/s--5CpcASS5--/c_crop,h_900,w_1600,x_0,y_0/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/mediacorp/cna/image/2024/12/12/469836668_1555129815181450_9076647716885883825_n.jpg?itok=MgS-Icku",
+      "publishedAt": "2024-12-12T13:26:00Z",
+      "content": "Gukesh won Thursday's game with the black pieces after Ding wilted under pressure and blundered in what commentators considered to be a comfortable position, snatching the title with a final score of… [+1096 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "[Removed]"
+      },
+      "author": null,
+      "title": "[Removed]",
+      "description": "[Removed]",
+      "url": "https://removed.com",
+      "urlToImage": null,
+      "publishedAt": "2024-12-05T07:21:23Z",
+      "content": "[Removed]"
+    }
+  ]
+}
