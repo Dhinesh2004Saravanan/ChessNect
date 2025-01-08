@@ -1,6 +1,10 @@
 import 'dart:io';
 
+import 'package:chess_application_1/screens/Aboutus/aboutus.dart';
+import 'package:chess_application_1/screens/loginPage.dart';
+import 'package:chess_application_1/screens/savedPage.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../Utils/Constants/colors.dart';
@@ -27,16 +31,24 @@ class _DrawerNavState extends State<DrawerNav> {
           padding: EdgeInsets.zero,
           children: [
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Get.to(() => LoginPage());
+              },
               child: widget.userEmail != null && widget.userEmail!.isNotEmpty
                   ? UserAccountsDrawerHeader(
                       accountName: Text(
                         '${widget.userName ?? 'Hi!'}',
-                        // style: TextStyle(fontFamily: TFont.primaryfontfamily),
+                        style: GoogleFonts.aBeeZee(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),
                       ),
                       accountEmail: Text(
                         widget.userEmail ?? 'Traveller',
-                        // style: TextStyle(fontFamily: TFont.primaryfontfamily),
+                        style: GoogleFonts.aBeeZee(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),
                       ),
                       currentAccountPicture: CircleAvatar(
                         backgroundImage: widget.userAvatarUrl != null &&
@@ -69,16 +81,16 @@ class _DrawerNavState extends State<DrawerNav> {
                                 children: [
                                   Text(
                                     'Login/Signup now',
-                                    style: TextStyle(
-                                      color: Colors.white,
+                                    style: GoogleFonts.aBeeZee(
                                       fontSize: 16,
+                                      color: TColors.textsecondary,
                                     ),
                                   ),
                                   Text(
                                     'and Grab Exclusive deals',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 14,
+                                    style: GoogleFonts.aBeeZee(
+                                      fontSize: 12,
+                                      color: TColors.textsecondary,
                                     ),
                                   ),
                                 ],
@@ -99,31 +111,47 @@ class _DrawerNavState extends State<DrawerNav> {
                 'Saved',
                 style: GoogleFonts.aBeeZee(fontSize: 14),
               ),
-              onTap: () async {},
+              onTap: () async {
+                Get.to(() => Savedpage());
+              },
             ),
+            // ListTile(
+            //   leading: Image.asset(
+            //     'assets/images/Drawer_icons/videos.png',
+            //     height: 25,
+            //     width: 25,
+            //   ),
+            //   title: Text(
+            //     'Videos',
+            //     style: GoogleFonts.aBeeZee(fontSize: 14),
+            //   ),
+            //   onTap: () async {},
+            // ),
+            // ListTile(
+            //   leading: Image.asset(
+            //     'assets/images/Drawer_icons/news.png',
+            //     height: 25,
+            //     width: 25,
+            //   ),
+            //   title: Text(
+            //     'News',
+            //     style: GoogleFonts.aBeeZee(fontSize: 14),
+            //   ),
+            //   onTap: () async {},
+            // ),
             ListTile(
               leading: Image.asset(
-                'assets/images/Drawer_icons/videos.png',
+                'assets/images/Drawer_icons/aboutus.png',
                 height: 25,
                 width: 25,
               ),
               title: Text(
-                'Videos',
+                'About Us',
                 style: GoogleFonts.aBeeZee(fontSize: 14),
               ),
-              onTap: () async {},
-            ),
-            ListTile(
-              leading: Image.asset(
-                'assets/images/Drawer_icons/news.png',
-                height: 25,
-                width: 25,
-              ),
-              title: Text(
-                'News',
-                style: GoogleFonts.aBeeZee(fontSize: 14),
-              ),
-              onTap: () async {},
+              onTap: () async {
+                Get.to(() => Aboutus());
+              },
             ),
             if (widget.userEmail != null && widget.userEmail!.isNotEmpty) ...[
               ListTile(
@@ -137,18 +165,6 @@ class _DrawerNavState extends State<DrawerNav> {
                 onTap: () async {},
               ),
             ],
-            ListTile(
-              leading: Image.asset(
-                'assets/images/Drawer_icons/aboutus.png',
-                height: 25,
-                width: 25,
-              ),
-              title: Text(
-                'About Us',
-                style: GoogleFonts.aBeeZee(fontSize: 14),
-              ),
-              onTap: () async {},
-            ),
           ],
         ),
       ),

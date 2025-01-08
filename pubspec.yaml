@@ -22,14 +22,25 @@ dependencies:
   firebase_auth: ^5.3.4
   cloud_firestore: ^5.6.0
   progress_dialog_null_safe: ^3.0.0
-  flashy_tab_bar2: ^0.0.10
-  google_sign_in: ^6.2.2
   get: ^4.6.6
+  shared_preferences: ^2.3.5
+  smooth_page_indicator: ^1.2.0+3
+  flutter_launcher_icons: ^0.14.2
+  image_picker: ^1.1.2
+  geolocator: ^13.0.2
+  google_maps_flutter: ^2.10.0
+  url_launcher: ^6.3.1
+#  flutter_phone_direct_caller: ^2.1.1
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # ---------Launcher Icons----------
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/images/lunchericon/chessnact.png"
 
   flutter_lints: ^5.0.0
 
@@ -43,8 +54,11 @@ flutter:
   assets:
 
     - assets/images/menu.png
+    - assets/images/lunchericon/
+    - assets/images/aboutus/
     - assets/images/Login/
     - assets/images/Drawer_icons/
+    - assets/images/Onboarding_images/
     - assets/images/Login/google.png
     - assets/images/Login/microsoft.png
     - assets/chessIcon.gif

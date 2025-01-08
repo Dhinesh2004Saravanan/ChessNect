@@ -3,7 +3,6 @@ import 'dart:convert';
 
 import 'package:chess_application_1/Navigation/drawernavigation.dart';
 import 'package:chess_application_1/Utils/Constants/colors.dart';
-import 'package:chess_application_1/backendOperations/likedCount.dart';
 import 'package:chess_application_1/modelClass/newsModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -20,6 +19,7 @@ final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
 class _NewsPageState extends State<NewsPage> {
   final PageController _bNewsController = PageController();
+  Map<int, bool> bookmarkStatus = {};
   Timer? _bnewsTimer;
   int _currentBnewsPage = 0;
 
@@ -59,7 +59,7 @@ class _NewsPageState extends State<NewsPage> {
   void dispose() {
     // Log time for the last page when the widget is disposed
     int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
-    Likes.timeSpent(index: _currentIndex, durationInSeconds: durationInSeconds);
+    // Likes.timeSpent(index: _currentIndex, durationInSeconds: durationInSeconds);
     _bnewsTimer?.cancel();
     _bNewsController.dispose();
     super.dispose();
@@ -77,262 +77,231 @@ class _NewsPageState extends State<NewsPage> {
     print(newsFeed);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
-
-    return Scaffold(
-        backgroundColor: TColors.NSwhite,
-        key: _scaffoldKey,
-        drawer: DrawerNav(),
-        appBar: AppBar(
-          backgroundColor: TColors.NSwhite,
-          leading: GestureDetector(
-            onTap: () {
-              _scaffoldKey.currentState?.openDrawer();
-            },
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Image.asset(
-                'assets/images/menu.png',
-                height: 20,
-                width: 20,
-              ),
-            ),
-          ),
-          title: Text(
-            'News',
-            style: GoogleFonts.aBeeZee(fontSize: 20),
-          ),
-        ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                _buildBreakingnewsSection(context, height, width),
-                SizedBox(height: height * 0.012),
-                _buildBreakingNews(),
-                SizedBox(height: height * 0.021),
-                _buildRecomendSection(context, height, width),
-              ],
-            ),
-          ),
-        )
-        // PageView.builder(
-        //     onPageChanged: (index) {
-        //       int durationInSeconds =
-        //           DateTime.now().difference(_startTime).inSeconds;
-        //       Likes.timeSpent(
-        //           index: _currentIndex, durationInSeconds: durationInSeconds);
-        //
-        //       setState(() {
-        //         _currentIndex = index;
-        //         _startTime = DateTime.now();
-        //       });
-        //     },
-        //     controller: _pageController,
-        //     itemCount: newsFeed.length,
-        //     itemBuilder: (context, index) {
-        //       return InkWell(
-        //         onDoubleTap: () {},
-        //         child: Container(
-        //           width: _width,
-        //           height: _height,
-        //           child: Center(
-        //             child: Padding(
-        //               padding: EdgeInsets.symmetric(horizontal: 20),
-        //               child: Column(
-        //                 mainAxisAlignment: MainAxisAlignment.center,
-        //                 crossAxisAlignment: CrossAxisAlignment.start,
-        //                 children: [
-        //                   Text(
-        //                     newsFeed[index].title,
-        //                     style: TextStyle(
-        //                         fontSize: 24, fontWeight: FontWeight.bold),
-        //                   ),
-        //                   SizedBox(height: 16),
-        //                   Image.network(
-        //                     newsFeed[index].urlToImage!,
-        //                     width: double.infinity,
-        //                     height: 200,
-        //                     fit: BoxFit.cover,
-        //                   ),
-        //                   SizedBox(height: 16),
-        //                   Text(
-        //                     newsFeed[index].description!,
-        //                     style: TextStyle(fontSize: 16),
-        //                   ),
-        //                 ],
-        //               ),
-        //             ),
-        //           ),
-        //         ),
-        //       );
-        //     }),
-        // bottomNavigationBar: FlashyTabBar(
-        //   selectedIndex: _selectedIndex,
-        //   showElevation: true,
-        //   onItemSelected: (index) => setState(() {
-        //     _selectedIndex = index;
-        //   }),
-        //   items: [
-        //     FlashyTabBarItem(
-        //       icon: Icon(FontAwesomeIcons.home),
-        //       title: Text('Home'),
-        //     ),
-        //     FlashyTabBarItem(
-        //       icon: Icon(FontAwesomeIcons.user),
-        //       title: Text('Profile'),
-        //     ),
-        //     FlashyTabBarItem(
-        //       icon: Icon(FontAwesomeIcons.searchengin),
-        //       title: Text('Search'),
-        //     ),
-        //   ],
-        // ),
-        );
+  void toggleBookmark(int index) {
+    setState(() {
+      bookmarkStatus[index] = !(bookmarkStatus[index] ?? false);
+    });
   }
 
-  Widget _buildBreakingnewsSection(
-      BuildContext context, double height, double width) {
-    return SizedBox(
-      height: height * 0.05,
-      width: width * 0.95,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            'Breaking News',
-            style:
-                GoogleFonts.aBeeZee(fontSize: 18, fontWeight: FontWeight.w600),
-          ),
-          TextButton(
-            onPressed: () {
-              // Get.to(() => Offers());
-            },
-            child: Text(
-              'View All',
-              style:
-                  GoogleFonts.aBeeZee(fontSize: 14, color: TColors.textlinks),
+  @override
+  Widget build(BuildContext context) {
+    double _width = MediaQuery.of(context).size.width;
+    double _height = MediaQuery.of(context).size.height;
+
+    return Scaffold(
+      backgroundColor: TColors.NSwhite,
+      key: _scaffoldKey,
+      drawer: DrawerNav(),
+      appBar: AppBar(
+        backgroundColor: TColors.NSwhite,
+        leading: GestureDetector(
+          onTap: () {
+            _scaffoldKey.currentState?.openDrawer();
+          },
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Image.asset(
+              'assets/images/menu.png',
+              height: 20,
+              width: 20,
             ),
           ),
-        ],
+        ),
+        title: Text(
+          'News',
+          style: GoogleFonts.aBeeZee(fontSize: 20),
+        ),
+      ),
+      body: PageView.builder(
+        onPageChanged: (index) {
+          int durationInSeconds =
+              DateTime.now().difference(_startTime).inSeconds;
+          setState(() {
+            _currentIndex = index;
+            _startTime = DateTime.now();
+          });
+        },
+        controller: _pageController,
+        itemCount: newsFeed.length,
+        itemBuilder: (context, index) {
+          return NewsDetailPage(
+            feeds: newsFeed[index],
+            height: _height,
+            isBookmarked: bookmarkStatus[index] ?? false,
+            onBookmarkToggle: () => toggleBookmark(index),
+          );
+        },
       ),
     );
   }
+}
 
-  Widget _buildBreakingNews() {
-    return Container(
-      height: 180,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
+Widget NewsDetailPage({
+  required Article feeds,
+  required double height,
+  required bool isBookmarked,
+  required VoidCallback onBookmarkToggle,
+}) {
+  return Stack(
+    children: [
+      Positioned.fill(
+        child: Stack(
+          children: [
+            Image.network(
+              feeds.urlToImage!,
+              fit: BoxFit.fill,
+              height: height / 2,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.black.withOpacity(0.6), Colors.transparent],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
-      clipBehavior: Clip.hardEdge,
-      child: PageView.builder(
-        controller: _bNewsController,
-        itemCount: newsFeed.length,
-        itemBuilder: (context, index) {
-          final offer = newsFeed[index];
-          return GestureDetector(
-            onTap: () {
-              // Get.to(() => Offers());
-            },
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 9),
-              child: Stack(
+      SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Spacer(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Text(
+                feeds.title,
+                style: GoogleFonts.aBeeZee(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 23,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Text(
+                "Trending • 6 hours ago",
+                style: GoogleFonts.aBeeZee(
+                  fontSize: 14,
+                  color: Colors.white.withOpacity(0.8),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Container(
+              padding: const EdgeInsets.all(15),
+              height: height / 2,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(30),
+                  topLeft: Radius.circular(30),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Image widget
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: Image.network(
-                      newsFeed[index].urlToImage!,
-                      fit: BoxFit.fill,
-                      width: double.infinity,
-                    ),
-                  ),
-                  // Gradient overlay
-                  Positioned.fill(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.transparent,
-                            TColors.NSblack.withOpacity(0.9),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            "https://cdn.icon-icons.com/icons2/70/PNG/512/bbc_news_14062.png"),
+                        radius: 20,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Text(
+                              feeds.source.name,
+                              style: GoogleFonts.aBeeZee(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                            const SizedBox(width: 5),
+                            const Icon(
+                              Icons.verified,
+                              size: 16,
+                              color: Colors.blue,
+                            ),
                           ],
                         ),
-                        borderRadius: BorderRadius.circular(12),
                       ),
+                      IconButton(
+                        onPressed: onBookmarkToggle,
+                        icon: Icon(
+                          isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                          color: isBookmarked
+                              ? TColors.iconlink
+                              : TColors.iconprimary,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    width: 145,
+                    // decoration: BoxDecoration(
+                    //     color: Colors.black26,
+                    //     borderRadius: BorderRadius.circular(25)),
+                    child: Row(
+                      children: [
+                        Row(
+                          children: [
+                            // Like Button
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.thumb_up_alt_outlined,
+                                color: TColors.iconlink,
+                                size: 18,
+                              ),
+                            ),
+                            Text(
+                              '1',
+                              style: GoogleFonts.aBeeZee(fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            // Dislike Button
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.thumb_down_alt_outlined,
+                                color: TColors.iconlink,
+                                size: 18,
+                              ),
+                            ),
+                            Text(
+                              '0',
+                              style: GoogleFonts.aBeeZee(fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                  Positioned(
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    child: Container(
-                      padding: EdgeInsets.all(12),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            newsFeed[index].title,
-                            style: TextStyle(
-                              // fontFamily: TFont.primaryfontfamily,
-                              color: TColors.textsecondary,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 14,
-                            ),
-                          ),
-                          SizedBox(height: 4),
-                          Text(
-                            newsFeed[index].description!,
-                            style: TextStyle(
-                              // fontFamily: TFont.secondaryfontfamily,
-                              color: TColors.textsecondary,
-                              fontSize: 10,
-                            ),
-                          ),
-                        ],
+                  const SizedBox(height: 20),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Text(
+                        feeds.description!,
+                        style: GoogleFonts.aBeeZee(fontSize: 16),
                       ),
                     ),
                   ),
                 ],
               ),
             ),
-          );
-        },
+          ],
+        ),
       ),
-    );
-  }
-
-  Widget _buildRecomendSection(
-      BuildContext context, double height, double width) {
-    return SizedBox(
-      height: height * 0.05,
-      width: width * 0.95,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            'Recommendation',
-            style:
-                GoogleFonts.aBeeZee(fontSize: 18, fontWeight: FontWeight.w600),
-          ),
-          TextButton(
-            onPressed: () {
-              // Get.to(() => Offers());
-            },
-            child: Text(
-              'View All',
-              style:
-                  GoogleFonts.aBeeZee(fontSize: 14, color: TColors.textlinks),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+    ],
+  );
 }
