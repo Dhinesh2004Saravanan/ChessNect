@@ -1,13 +1,16 @@
 
+import 'package:chess_application_1/controllers/newsController.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Likes
 {
   static final  FirebaseFirestore firestore=FirebaseFirestore.instance;
   static final FirebaseAuth firebaseAuth=FirebaseAuth.instance;
   static List<String> likedPeople=[];
+  static List<String> dislikedPeople=[];
   static var data={};
 
  static Future<void> addLikes({required int index,required BuildContext context}) async {
@@ -58,6 +61,56 @@ class Likes
     }
   }
 
+  static Future<void> addDisLikes({required int index,required BuildContext context}) async {
+    try {
+      DocumentSnapshot snapshot = await FirebaseFirestore.instance
+          .collection("NEWSFEED")
+          .doc("$index")
+          .get();
+
+      if (snapshot.exists) {
+        // Extract the "likes" field and cast it as a list
+        var data = snapshot.data() as Map<String, dynamic>; // Explicitly cast to a Map
+        dislikedPeople = List<String>.from(data["dislikes"] ?? []);
+        print("dLiked People: $dislikedPeople");
+      } else {
+        print("Document does not exist.");
+        dislikedPeople   = []; // Initialize with an empty list if the document doesn't exist
+      }
+
+
+      var userId=await firebaseAuth.currentUser!.uid.toString();
+      if(!dislikedPeople.contains(userId))
+      {
+        dislikedPeople.add(userId);
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text("DISLIKED SUCCESSFULLY"))
+        );
+
+
+      }
+      else
+      {
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(" POST WAS ALREADY DISLIKED "))
+        );
+        return;
+      }
+
+
+
+      await firestore.collection("NEWSFEED").doc("$index").update({
+        "dislikes":dislikedPeople
+      }).then((val){
+        print("updated successfully");
+
+
+      });
+    } catch (e) {
+      print("Error fetching likes: $e");
+    }
+  }
+
 
 
 
@@ -76,10 +129,10 @@ class Likes
        var userId=await firebaseAuth.currentUser!.uid.toString();
        print("duration is $durationInSeconds");
 
-       Map<String,dynamic> oldData=data["seenDuration"];
+       Map<String,dynamic> oldData=data["seenDuration"] ??{};
 
 
-      print("val is ${oldData[userId]}");
+      print("val is ${oldData[userId]??" "}");
 
       if(oldData[userId]==null)
         {

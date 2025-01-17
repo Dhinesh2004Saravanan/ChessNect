@@ -1,9 +1,11 @@
 import 'package:chess_application_1/Navigation/bottomnav.dart';
+import 'package:chess_application_1/screens/Edit_profile/edit_profilepage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:progress_dialog_null_safe/progress_dialog_null_safe.dart';
-
+import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 class FirebaseAuthentication {
   static final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 
@@ -13,6 +15,7 @@ class FirebaseAuthentication {
       {required BuildContext context,
       required String emailId,
       required String password}) async {
+    final SharedPreferences prefs= await SharedPreferences.getInstance();
     ProgressDialog progressDialog =
         ProgressDialog(context, type: ProgressDialogType.normal);
     progressDialog.style(
@@ -38,9 +41,15 @@ class FirebaseAuthentication {
       if (user != null) {
         print("User is logged in: ${user.email}");
 
+
+
+
         WidgetsBinding.instance.addPostFrameCallback((_) {
+
+
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => MainScreen()));
+              context, MaterialPageRoute(builder: (context) => EditProfilePage()));
+
         });
       } else {
         print("Login failed: User is null");
@@ -79,7 +88,8 @@ class FirebaseAuthentication {
       {required BuildContext context,
       required String emailId,
       required String password,
-      required String username}) async {
+     }) async {
+    final SharedPreferences prefs= await SharedPreferences.getInstance();
     ProgressDialog progressDialog =
         ProgressDialog(context, type: ProgressDialogType.normal);
     progressDialog.style(
@@ -110,9 +120,10 @@ class FirebaseAuthentication {
       if (user != null) {
         print("User registered successfully: ${user.email}");
 
+        await prefs.setString('email', emailId);
         await firestore.collection("USER PROFILE").doc(user.uid).set({
           "emailId": emailId,
-          "username": username,
+
           "userId": user.uid
         }).whenComplete(() {
           progressDialog.hide();
@@ -122,8 +133,10 @@ class FirebaseAuthentication {
           SnackBar(content: Text('Registration Successful!')),
         );
         WidgetsBinding.instance.addPostFrameCallback((_) {
+
+
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => MainScreen()));
+              context, MaterialPageRoute(builder: (context) => EditProfilePage()));
         });
       } else {
         print("Registration failed: User is null");

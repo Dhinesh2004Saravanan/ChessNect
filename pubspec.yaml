@@ -30,6 +30,7 @@ dependencies:
   geolocator: ^13.0.2
   google_maps_flutter: ^2.10.0
   url_launcher: ^6.3.1
+  intl: ^0.20.1
 #  flutter_phone_direct_caller: ^2.1.1
 
 
@@ -65,6 +66,12 @@ flutter:
     - assets/eyeopen.png
     - assets/eyeclose.png
     - assets/chessData.json
+    - assets/images/persons/Mikhail.jpg
+    - assets/images/persons/Vishy.webp
+    - assets/images/persons/Gukesh.webp
+    - assets/images/persons/bobby.webp
+    - assets/images/persons/pragg.webp
+    - assets/images/persons/magnus.png
 
 
   # fonts:

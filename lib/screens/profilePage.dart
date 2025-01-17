@@ -20,23 +20,27 @@ class _ProfilepageState extends State<Profilepage> {
   String userAddress = "Fetching Address...";
   String profileImagePath = ""; // Path for the profile image if stored locally
 
+
   @override
   void initState() {
+    // TODO: implement initState
     super.initState();
-    _loadProfileData();
+    getData();
   }
 
-  Future<void> _loadProfileData() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
+
+  Future<void> getData() async
+  {
+    SharedPreferences preferences=await SharedPreferences.getInstance();
+    userName=await preferences.getString('name')??" ";
+    userEmail=await preferences.getString('email')??" ";
+    profileImagePath=await preferences.getString("selectedAvatar")??"";
+    print("user $userEmail");
     setState(() {
-      userName = prefs.getString('userName') ?? "Shane";
-      userEmail = prefs.getString('userEmail') ?? "shane.sine@gmail.com";
-      userAddress = prefs.getString('userAddress') ??
-          "B-130 Tenth floor, B Block, Noida, Uttar Pradesh";
-      profileImagePath = prefs.getString('profileImage') ?? "";
+      userName;
+      userEmail;
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +71,7 @@ class _ProfilepageState extends State<Profilepage> {
                       CircleAvatar(
                         radius: 50,
                         backgroundImage: profileImagePath.isNotEmpty
-                            ? FileImage(File(profileImagePath))
+                            ? AssetImage(profileImagePath)
                             : AssetImage(
                                     'assets/images/lunchericon/chessnact.png')
                                 as ImageProvider,

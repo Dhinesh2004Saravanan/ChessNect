@@ -51,17 +51,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 SizedBox(
                   height: _height / 32,
                 ),
-                Container(
-                  height: 50,
-                  child: InputText(
-                    first: Icon(
-                      FontAwesomeIcons.user,
-                      size: 18,
-                    ),
-                    textController: username,
-                    hint: "Username",
-                  ),
-                ),
+
                 SizedBox(
                   height: 10,
                 ),
@@ -114,7 +104,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 MaterialStateProperty.all(TColors.primary)),
                         onPressed: () {
                           if (_formkey.currentState!.validate()) {
-                            print(username.text);
+
                             print(confirmPassword.text);
                             print(emailId.text);
                             print(password.text);
@@ -125,7 +115,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   context: context,
                                   emailId: emailId.text,
                                   password: password.text,
-                                  username: username.text);
+                                 );
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(

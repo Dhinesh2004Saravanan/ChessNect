@@ -17,7 +17,7 @@ class _AboutusState extends State<Aboutus> {
   @override
   void initState() {
     super.initState();
-    _numberCtrl.text = "7022785192";
+    _numberCtrl.text = "9403891882";
   }
 
   // Open Email Client
@@ -86,7 +86,7 @@ class _AboutusState extends State<Aboutus> {
                     SizedBox(height: 8),
                     ListTile(
                       onTap: () {
-                        _launchPhone("+916370610362"); // Open dialer
+                        _launchPhone("+919403891882"); // Open dialer
                       },
                       title: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,7 +102,7 @@ class _AboutusState extends State<Aboutus> {
                             onTap: () {
                               _launchPhone(_numberCtrl.text); // Open dialer
                             },
-                            child: Text('+91 7022785192',
+                            child: Text('+91 9403891882',
                                 style: GoogleFonts.aBeeZee()),
                           )
                         ],
@@ -122,7 +122,7 @@ class _AboutusState extends State<Aboutus> {
                           GestureDetector(
                             onTap: _launchEmail,
                             child: Text(
-                              'chessensei.com',
+                              'info@chessensei.com',
                               style: GoogleFonts.aBeeZee(),
                             ),
                           )

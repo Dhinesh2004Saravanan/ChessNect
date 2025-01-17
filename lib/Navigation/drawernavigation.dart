@@ -2,10 +2,13 @@ import 'dart:io';
 
 import 'package:chess_application_1/screens/Aboutus/aboutus.dart';
 import 'package:chess_application_1/screens/loginPage.dart';
+import 'package:chess_application_1/screens/profilePage.dart';
 import 'package:chess_application_1/screens/savedPage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../Utils/Constants/colors.dart';
 
@@ -22,6 +25,36 @@ class DrawerNav extends StatefulWidget {
 }
 
 class _DrawerNavState extends State<DrawerNav> {
+
+  String username="";
+  String emailId="";
+  String profileImage="";
+
+ Future<void>  getDatas() async
+  {
+   SharedPreferences preferences=await SharedPreferences.getInstance();
+
+   username=await preferences.getString('name')??"";
+   emailId=await preferences.getString("email")??"";
+   profileImage=await preferences.getString("selectedAvatar")??"";
+   setState(() {
+     username;
+     emailId;
+     profileImage;
+   });
+   print(username);
+   print(emailId);
+
+   print(profileImage);
+
+  }
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getDatas();
+
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -32,29 +65,34 @@ class _DrawerNavState extends State<DrawerNav> {
           children: [
             InkWell(
               onTap: () {
-                Get.to(() => LoginPage());
+                if(FirebaseAuth.instance.currentUser==null)
+                  {
+                    Get.to(() => LoginPage());
+                  }
+                else
+                  {
+                    Get.to(()=>Profilepage());
+                  }
               },
-              child: widget.userEmail != null && widget.userEmail!.isNotEmpty
+              child: (FirebaseAuth.instance.currentUser!=null)
                   ? UserAccountsDrawerHeader(
                       accountName: Text(
-                        '${widget.userName ?? 'Hi!'}',
+                        '${username ?? 'Hi!'}',
                         style: GoogleFonts.aBeeZee(
                           fontSize: 18,
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                       accountEmail: Text(
-                        widget.userEmail ?? 'Traveller',
+                        emailId ?? 'Traveller',
                         style: GoogleFonts.aBeeZee(
                           fontSize: 18,
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                       currentAccountPicture: CircleAvatar(
-                        backgroundImage: widget.userAvatarUrl != null &&
-                                widget.userAvatarUrl!
-                                    .startsWith('/data/user/0/')
-                            ? FileImage(File(widget.userAvatarUrl!))
+                        backgroundImage:(profileImage.isNotEmpty)
+                            ? AssetImage(profileImage)
                             : AssetImage('asset/images/user/person.png')
                                 as ImageProvider,
                       ),

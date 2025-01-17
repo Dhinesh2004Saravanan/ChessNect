@@ -191,3 +191,44 @@ void _saveToSharedPreferences() async {
 
 
 
+/*
+
+    final newsItem = newsController.newsItems[index];
+              final publishedDate = formatPublishedDate(newsItem.datePublished!);
+              final authors = newsItem.authors;
+              final authorName =
+              authors.isNotEmpty ? authors[0].name : 'Unknown Author';
+              final authorImage = newsItem.attachments.isNotEmpty
+                  ? newsItem.attachments[0].url
+                  : 'https://via.placeholder.com/50';
+
+              return  Center(child: Text(_.newsItems.toString(),style: TextStyle(
+                color:  Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 30
+              ),));
+            },
+          );
+*/
+/*
+PageView.builder(
+            onPageChanged: (index) {
+              int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
+         //     Likes.timeSpent(index:  _currentIndex,durationInSeconds:  durationInSeconds);
+
+              setState(() {
+                _currentIndex = index;
+                _startTime = DateTime.now();
+              });
+            },
+            controller: _pageController,
+            itemCount: newsFeed.length,
+            itemBuilder: (context, index) {
+
+
+              return Center(
+                child: Text(index.toString()),
+              );
+            },
+          );
+*/
