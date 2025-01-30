@@ -1,7 +1,9 @@
 import 'dart:io';
 
 import 'package:chess_application_1/Utils/Constants/colors.dart';
+import 'package:chess_application_1/screens/Aboutus/aboutus.dart';
 import 'package:chess_application_1/screens/Edit_profile/edit_profilepage.dart';
+import 'package:chess_application_1/screens/savedPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -127,8 +129,17 @@ class _ProfilepageState extends State<Profilepage> {
             ),
             const SizedBox(height: 30),
             // Options Section
-            _buildOption('Manage Bookmark', Icons.bookmark),
-            _buildOption('Help', Icons.help),
+            InkWell(
+
+                onTap: (){
+                  Get.to(()=>Savedpage());
+                },
+                child: _buildOption('Save Later', Icons.bookmark)),
+            InkWell(
+                onTap: (){
+                  Get.to(()=>Aboutus());
+                },
+                child: _buildOption('Help', Icons.help)),
             _buildOption('Logout', Icons.logout),
           ],
         ),
@@ -141,7 +152,11 @@ class _ProfilepageState extends State<Profilepage> {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: InkWell(
         onTap: () {
+          print("Page is clidked");
           // Handle navigation or action
+
+
+
         },
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),

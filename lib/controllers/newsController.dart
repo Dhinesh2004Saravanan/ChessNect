@@ -68,6 +68,6 @@ class NewsController extends GetxController {
   void onInit() {
     super.onInit();
     fetchNewsData();
-    getLikedAndDisLikedCount(index: 0);
+
   }
 }

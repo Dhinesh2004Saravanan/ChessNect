@@ -1,4 +1,5 @@
 import 'package:chess_application_1/Utils/Constants/colors.dart';
+import 'package:chess_application_1/backendOperations/ServerAuthenticationUser.dart';
 import 'package:chess_application_1/backendOperations/authenticationFirebase.dart';
 import 'package:chess_application_1/screens/registerPage.dart';
 import 'package:chess_application_1/usableWidgets/inputField.dart';
@@ -107,13 +108,12 @@ class _LoginPageState extends State<LoginPage> {
                       if (formkey.currentState!.validate()) {
                         print(emailId.text);
                         print(password.text);
-                        FirebaseAuthentication.login(
-                            context: context,
-                            emailId: emailId.text,
-                            password: password.text);
-                        setState(() {
+                        // FirebaseAuthentication.login(
+                        //     context: context,
+                        //     emailId: emailId.text,
+                        //     password: password.text);
 
-                        });
+                        ServerAuthentication.login(emailId: emailId.text, password: password.text, context: context);
                       }
                     },
                     child: Padding(

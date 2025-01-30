@@ -1,4 +1,5 @@
 import 'package:chess_application_1/Utils/Constants/colors.dart';
+import 'package:chess_application_1/backendOperations/ServerAuthenticationUser.dart';
 import 'package:chess_application_1/backendOperations/authenticationFirebase.dart';
 import 'package:chess_application_1/screens/loginPage.dart';
 import 'package:flutter/gestures.dart';
@@ -111,11 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             String p = password.text.trim();
                             String cp = confirmPassword.text.trim();
                             if (p == cp) {
-                              FirebaseAuthentication.register(
-                                  context: context,
-                                  emailId: emailId.text,
-                                  password: password.text,
-                                 );
+                             ServerAuthentication.register(emailId: emailId.text, password: password.text, context: context);
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(

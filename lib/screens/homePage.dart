@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:chess_application_1/Utils/Constants/colors.dart';
+import 'package:chess_application_1/backendOperations/ServerAuthenticationUser.dart';
 import 'package:chess_application_1/backendOperations/likedCount.dart';
 import 'package:chess_application_1/controllers/newsController.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -15,6 +16,7 @@ import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../Navigation/drawernavigation.dart';
+import '../controllers/likedController.dart';
 
 class NewsPage extends StatefulWidget {
   NewsPage({super.key});
@@ -33,7 +35,8 @@ class _NewsPageState extends State<NewsPage> {
   late PageController _pageController;
 
 
-  String formatPublishedDate(DateTime publishedDate) {
+  String formatPublishedDate(DateTime publishedDate)
+  {
 
     final DateTime currentDate = DateTime.now();
 
@@ -48,18 +51,20 @@ class _NewsPageState extends State<NewsPage> {
       return '${difference.inHours}h ago';
     }
   }
+
+  NewsController newsController=Get.put(NewsController());
   @override
   void initState() {
     super.initState();
     _pageController = PageController(initialPage: 0);
+
     _currentIndex = 0;
     _startTime = DateTime.now();
 
 
-    setState(() {
-      print("set calleddddddddddddddd");
 
-    });
+
+
   }
   @override
   void dispose() {
@@ -73,9 +78,10 @@ class _NewsPageState extends State<NewsPage> {
     double _width = MediaQuery.of(context).size.width;
     double _height = MediaQuery.of(context).size.height;
 
-    NewsController newsController=Get.put(NewsController());
 
-    return Scaffold(
+
+    return
+      Scaffold(
       backgroundColor: Colors.white,
       key: _scaffoldKey,
       drawer: DrawerNav(),
@@ -102,58 +108,274 @@ class _NewsPageState extends State<NewsPage> {
         ),
       ),
       body:
-      Obx((){
-        if(newsController.newsItems.value.isEmpty)
-        {
-          return SizedBox();
-        }
 
-
-
-        return PageView.builder(
-
-            controller: _pageController,
-            onPageChanged: (index){
-
-              Get.find<NewsController>().getLikedAndDisLikedCount(index: index+1);
-              print("BEFORE CURRENT INDEX ${_currentIndex}");
-
-
-              int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
-              _currentIndex = index;
-              _startTime = DateTime.now();
-              Likes.timeSpent(index: index, durationInSeconds: durationInSeconds);
-              print("AFTER CURRENT INDEX ${_currentIndex}");
-              print("AFTER DURATION $durationInSeconds");
-
-            },
-            itemCount: newsController.newsItems.value.length,
-            itemBuilder: (context,index) {
-
-              final newsData=newsController.newsItems.value[index];
-              return NewsDetailPage(height: _height,
-                  title: newsData.title??"",
-                  description: newsData.contentText??"",
-                  imageUrl: newsData.image??"",
-                  publishedDate: formatPublishedDate(newsData.datePublished??DateTime.now()),
-                  authorName: formatAuthorName(newsData.authors[0].name!) ??"",
-                  authorImage: newsData.attachments[0].url??" ",
-                  index: index, context: context,
-                  likedCount: newsController.likedAndDisLikedCount[0],
-                  dislikedCount: newsController.likedAndDisLikedCount[1]
-
-
-              );
-            }
-        );
-
-
-      })
+          Center(
+            child: Text("NEWS TO BE ADDED"),
+          )
+      // Obx((){
+      //   if(newsController.newsItems.value.isEmpty)
+      //   {
+      //     return SizedBox();
+      //   }
+      //
+      //
+      //
+      //   return
+      //     PageView.builder(
+      //
+      //       controller: _pageController,
+      //       onPageChanged: (index){
+      //         //
+      //         // Get.find<NewsController>().getLikedAndDisLikedCount(index: index+1);
+      //         print("BEFORE CURRENT INDEX ${_currentIndex}");
+      //
+      //         int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
+      //         _currentIndex = index;
+      //         _startTime = DateTime.now();
+      //         Likes.timeSpent(index: index, durationInSeconds: durationInSeconds);
+      //         print("AFTER CURRENT INDEX ${_currentIndex}");
+      //         print("AFTER DURATION $durationInSeconds");
+      //
+      //       },
+      //       itemCount: newsController.newsItems.value.length,
+      //       itemBuilder: (context,index) {
+      //
+      //         final newsData=newsController.newsItems.value[index];
+      //         return NewsDetailPage(height: _height,
+      //             title: newsData.title??"",
+      //             description: newsData.contentText??"",
+      //             imageUrl: newsData.image??"",
+      //             publishedDate: formatPublishedDate(newsData.datePublished??DateTime.now()),
+      //             authorName: formatAuthorName(newsData.authors[0].name!) ??"",
+      //             authorImage: newsData.attachments[0].url??" ",
+      //             index: index, context: context,
+      //             likedCount: newsController.likedAndDisLikedCount[0],
+      //             dislikedCount: newsController.likedAndDisLikedCount[1]
+      //
+      //
+      //         );
+      //       }
+      //   );
+      //
+      //
+      // })
 
 
 
     );
   }
+  Widget NewsDetailPage({
+    required double height,
+    required String title,
+    required String description,
+    required String imageUrl,
+    required String publishedDate,
+    required String authorName,
+    required String authorImage,
+    required int index,
+    required BuildContext context,
+    required int likedCount,
+    required int dislikedCount
+  }) {
+    final formattedAuthorName = formatAuthorName(authorName);
+
+
+
+    bool likedStatus=false;
+    bool dislikedStatus=false;
+    bool bookMarked=false;
+    return Stack(
+      children: [
+        Positioned.fill(
+          child: Stack(
+            children: [
+              Image.network(
+                imageUrl,
+                fit: BoxFit.fill,
+                height: height / 3,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.black.withOpacity(0.6), Colors.transparent],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Spacer(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Text(
+                  title,
+                  style: GoogleFonts.aBeeZee(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 23,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Text(
+                  "Trending • $publishedDate",
+                  style: GoogleFonts.aBeeZee(
+                    fontSize: 14,
+                    color: Colors.white.withOpacity(0.8),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                padding: const EdgeInsets.all(15),
+                height: height / 2,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(30),
+                    topLeft: Radius.circular(30),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundImage: NetworkImage(authorImage),
+                          radius: 20,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            formattedAuthorName,
+                            style: GoogleFonts.aBeeZee(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+
+                        Spacer(),
+                        IconButton(onPressed: ()
+                        {
+
+                          if(FirebaseAuth.instance.currentUser==null)
+                          {
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
+                          }
+                          else
+                          {
+                            savedNews(newsTitle: title,description: description,imageUrl: imageUrl).whenComplete((){
+
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                  duration: Duration(seconds: 2),
+                                  content: Text("SUCCESSFULLY SAVED")));
+
+                            });
+                          }
+
+
+                        }, icon: Icon(Icons.bookmark))
+                      ],
+                    ),
+                    const SizedBox(height: 5),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                      child: Row(
+                        children: [
+                          IconButton(
+                            icon: Icon(
+                              Icons.thumb_up,
+                              size: 18,
+
+                            ),
+                            onPressed:
+                            (FirebaseAuth.instance.currentUser==null)?() {
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                  duration: Duration(seconds: 2),
+                                  content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
+                            }:
+
+                                () async {
+                              await  Likes.addLikes(index: index, context: context).whenComplete(()async{
+                                await newsController.getLikedAndDisLikedCount(index: index);
+
+                              });
+
+                            },
+                          ),
+                          Text(
+                            newsController.likedPeople.length.toString(),
+                            style: GoogleFonts.aBeeZee(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: TColors.primary,
+                            ),
+                          ),
+                          const SizedBox(width: 20),
+                          IconButton(
+                            icon: Icon(
+                              Icons.thumb_down,
+                              size: 18,
+
+                            ),
+                            onPressed:
+
+                            (FirebaseAuth.instance.currentUser==null)?(){
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                  duration: Duration(seconds: 2),
+                                  content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
+                            }:
+
+                                () async{
+                                  await  Likes.addDisLikes(index: index, context: context).whenComplete(()async{
+                                    await newsController.getLikedAndDisLikedCount(index: index);
+
+                                  });
+                            },
+                          ),
+                          Text(
+                            dislikedCount.toString(),
+                            style: GoogleFonts.aBeeZee(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: TColors.primary,
+                            ),
+                          ),
+
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Text(
+                          description,
+                          style: GoogleFonts.aBeeZee(fontSize: 16),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
 }
 
 String formatAuthorName(String authorName) {
@@ -185,6 +407,8 @@ String formatAuthorName(String authorName) {
 }
 
 
+
+/*
 Widget NewsDetailPage({
   required double height,
   required String title,
@@ -288,7 +512,8 @@ Widget NewsDetailPage({
                       ),
 
                       Spacer(),
-                      IconButton(onPressed: (){
+                      IconButton(onPressed: ()
+                      {
 
                         if(FirebaseAuth.instance.currentUser==null)
                           {
@@ -316,34 +541,30 @@ Widget NewsDetailPage({
                       children: [
                         IconButton(
                           icon: Icon(
-                            Icons.thumb_up,
+                           Icons.thumb_up,
                             size: 18,
 
                           ),
                           onPressed:
-                          (FirebaseAuth.instance.currentUser==null)?(){
+                          (FirebaseAuth.instance.currentUser==null)?() {
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                 duration: Duration(seconds: 2),
                                 content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
                           }:
 
                               () async {
-                          await  Likes.addLikes(index: index, context: context).whenComplete((){
-                            Get.find<NewsController>().getLikedAndDisLikedCount(index: index);
-                          });
+                          await  Likes.addLikes(index: index, context: context);
 
                           },
                         ),
-                      GetBuilder<NewsController>(builder: (_){
-                       return  Text(
-                        _.likedAndDisLikedCount[0].toString(),
+                        Text(
+                          likedCount.toString(),
                           style: GoogleFonts.aBeeZee(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                             color: TColors.primary,
                           ),
-                        );
-                      }),
+                        ),
                         const SizedBox(width: 20),
                         IconButton(
                           icon: Icon(
@@ -360,22 +581,18 @@ Widget NewsDetailPage({
                           }:
 
                               () {
-                            Likes.addDisLikes(index: index, context: context).whenComplete((){
-                              Get.find<NewsController>().getLikedAndDisLikedCount(index: index);
-
-                            });
+                            Likes.addDisLikes(index: index, context: context);
                           },
                         ),
-                        GetBuilder<NewsController>(builder: (_){
-                          return  Text(
-                           Get.find<NewsController>().likedAndDisLikedCount[1].toString(),
-                            style: GoogleFonts.aBeeZee(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: TColors.primary,
-                            ),
-                          );
-                        }),
+                        Text(
+                        dislikedCount.toString(),
+                          style: GoogleFonts.aBeeZee(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: TColors.primary,
+                          ),
+                        ),
+
                       ],
                     ),
                   ),
@@ -398,6 +615,7 @@ Widget NewsDetailPage({
   );
 }
 
+ */
 
 
 // saved the news

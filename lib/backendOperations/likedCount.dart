@@ -69,7 +69,7 @@ class Likes
           .get();
 
       if (snapshot.exists) {
-        // Extract the "likes" field and cast it as a list
+        // Extract the "Dislikes" field and cast it as a list
         var data = snapshot.data() as Map<String, dynamic>; // Explicitly cast to a Map
         dislikedPeople = List<String>.from(data["dislikes"] ?? []);
         print("dLiked People: $dislikedPeople");
