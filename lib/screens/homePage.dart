@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:chess_application_1/Utils/Constants/colors.dart';
 import 'package:chess_application_1/backendOperations/ServerAuthenticationUser.dart';
 import 'package:chess_application_1/backendOperations/likedCount.dart';
+import 'package:chess_application_1/controllers/apiFromNewsController.dart';
 import 'package:chess_application_1/controllers/newsController.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -52,7 +53,8 @@ class _NewsPageState extends State<NewsPage> {
     }
   }
 
-  NewsController newsController=Get.put(NewsController());
+
+  NewsFeedFromApi newsFeedFromApi=Get.put(NewsFeedFromApi());
   @override
   void initState() {
     super.initState();
@@ -109,62 +111,75 @@ class _NewsPageState extends State<NewsPage> {
       ),
       body:
 
-          Center(
-            child: Text("NEWS TO BE ADDED"),
+          FutureBuilder<bool>(
+
+
+            future: ServerAuthentication.isUserRegistered(),
+            builder: (context,snapshot){
+
+             return GetBuilder<NewsFeedFromApi>(builder:(_){
+                if(newsFeedFromApi.Result.isEmpty)
+                {
+                  return SizedBox();
+                }
+                return
+                  PageView.builder(
+
+                      controller: _pageController,
+                      onPageChanged: (index){
+
+
+                        print("BEFORE CURRENT INDEX ${_currentIndex}");
+
+                        int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
+                        _currentIndex = index;
+                        _startTime = DateTime.now();
+
+                        print("AFTER CURRENT INDEX ${_currentIndex}");
+                        print("AFTER DURATION $durationInSeconds");
+
+                      },
+                      itemCount: newsFeedFromApi.Result.length,
+                      itemBuilder: (context,index) {
+
+
+
+
+                        final newsData=newsFeedFromApi.Result[index];
+                        newsFeedFromApi.updateLikeCount(id:newsData["news_id"] );
+                        return NewsDetailPage(height: _height,
+                            title: newsData["title"]??"",
+                            description: newsData["short_desc"]??"",
+                            imageUrl: newsData["image"]??"",
+                            publishedDate: formatPublishedDate(DateFormat("dd MMM yyyy HH:mm").parse(newsData["published_on"])?? DateTime.now()),
+                            authorName:"BBC" ??"",
+                            authorImage:newsData["image"] ??" ",
+                            index: index, context: context,
+                            id_:newsData["news_id"],
+
+                            likedCount: 0,
+                            dislikedCount: 0,
+                          isRegistered:snapshot.data!,
+
+
+
+                        );
+                      }
+                  );
+
+              } );
+            }
+
+
           )
-      // Obx((){
-      //   if(newsController.newsItems.value.isEmpty)
-      //   {
-      //     return SizedBox();
-      //   }
-      //
-      //
-      //
-      //   return
-      //     PageView.builder(
-      //
-      //       controller: _pageController,
-      //       onPageChanged: (index){
-      //         //
-      //         // Get.find<NewsController>().getLikedAndDisLikedCount(index: index+1);
-      //         print("BEFORE CURRENT INDEX ${_currentIndex}");
-      //
-      //         int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
-      //         _currentIndex = index;
-      //         _startTime = DateTime.now();
-      //         Likes.timeSpent(index: index, durationInSeconds: durationInSeconds);
-      //         print("AFTER CURRENT INDEX ${_currentIndex}");
-      //         print("AFTER DURATION $durationInSeconds");
-      //
-      //       },
-      //       itemCount: newsController.newsItems.value.length,
-      //       itemBuilder: (context,index) {
-      //
-      //         final newsData=newsController.newsItems.value[index];
-      //         return NewsDetailPage(height: _height,
-      //             title: newsData.title??"",
-      //             description: newsData.contentText??"",
-      //             imageUrl: newsData.image??"",
-      //             publishedDate: formatPublishedDate(newsData.datePublished??DateTime.now()),
-      //             authorName: formatAuthorName(newsData.authors[0].name!) ??"",
-      //             authorImage: newsData.attachments[0].url??" ",
-      //             index: index, context: context,
-      //             likedCount: newsController.likedAndDisLikedCount[0],
-      //             dislikedCount: newsController.likedAndDisLikedCount[1]
-      //
-      //
-      //         );
-      //       }
-      //   );
-      //
-      //
-      // })
+
 
 
 
     );
   }
   Widget NewsDetailPage({
+    required String id_,
     required double height,
     required String title,
     required String description,
@@ -175,7 +190,8 @@ class _NewsPageState extends State<NewsPage> {
     required int index,
     required BuildContext context,
     required int likedCount,
-    required int dislikedCount
+    required int dislikedCount,
+    required bool isRegistered
   }) {
     final formattedAuthorName = formatAuthorName(authorName);
 
@@ -269,21 +285,25 @@ class _NewsPageState extends State<NewsPage> {
                         Spacer(),
                         IconButton(onPressed: ()
                         {
+                          if(!isRegistered)
+                            {
+                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
+                            }
 
-                          if(FirebaseAuth.instance.currentUser==null)
-                          {
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
-                          }
-                          else
-                          {
-                            savedNews(newsTitle: title,description: description,imageUrl: imageUrl).whenComplete((){
-
-                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                  duration: Duration(seconds: 2),
-                                  content: Text("SUCCESSFULLY SAVED")));
-
-                            });
-                          }
+                          // if(FirebaseAuth.instance.currentUser==null)
+                          // {
+                          //   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
+                          // }
+                          // else
+                          // {
+                          //   savedNews(newsTitle: title,description: description,imageUrl: imageUrl).whenComplete((){
+                          //
+                          //     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          //         duration: Duration(seconds: 2),
+                          //         content: Text("SUCCESSFULLY SAVED")));
+                          //
+                          //   });
+                          // }
 
 
                         }, icon: Icon(Icons.bookmark))
@@ -301,22 +321,24 @@ class _NewsPageState extends State<NewsPage> {
 
                             ),
                             onPressed:
-                            (FirebaseAuth.instance.currentUser==null)?() {
+                            (!isRegistered)?() {
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                   duration: Duration(seconds: 2),
                                   content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
                             }:
 
                                 () async {
-                              await  Likes.addLikes(index: index, context: context).whenComplete(()async{
-                                await newsController.getLikedAndDisLikedCount(index: index);
-
-                              });
+                              
+                              await newsFeedFromApi.setLike(id: id_);
+                              // await  Likes.addLikes(index: index, context: context).whenComplete(()async{
+                              //   await newsController.getLikedAndDisLikedCount(index: index);
+                              //
+                              // });
 
                             },
                           ),
                           Text(
-                            newsController.likedPeople.length.toString(),
+                            newsFeedFromApi.likedCount[id_]??"0",
                             style: GoogleFonts.aBeeZee(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
@@ -332,21 +354,24 @@ class _NewsPageState extends State<NewsPage> {
                             ),
                             onPressed:
 
-                            (FirebaseAuth.instance.currentUser==null)?(){
+                            (!isRegistered)?(){
                               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                                   duration: Duration(seconds: 2),
                                   content: Text("PLEASE LOGIN TO USE THIS FUNCTIONALITY")));
                             }:
 
                                 () async{
-                                  await  Likes.addDisLikes(index: index, context: context).whenComplete(()async{
-                                    await newsController.getLikedAndDisLikedCount(index: index);
+                                  // await  Likes.addDisLikes(index: index, context: context).whenComplete(()async{
+                                  //   await newsController.getLikedAndDisLikedCount(index: index);
+                                  //
+                                  // });
 
-                                  });
+                                  print(id_);
+                                 // await newsFeedFromApi.setLike(id: id_);
                             },
                           ),
                           Text(
-                            dislikedCount.toString(),
+                            newsFeedFromApi.dislikedCount[id_].toString()??"0",
                             style: GoogleFonts.aBeeZee(
                               fontSize: 14,
                               fontWeight: FontWeight.bold,

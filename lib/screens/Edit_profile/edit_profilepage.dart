@@ -24,7 +24,7 @@ class EditProfilePage extends StatefulWidget {
 
 class _EditProfilePageState extends State<EditProfilePage> {
   final PageController _pageController = PageController();
-  final     formkey= GlobalKey<FormState>();
+
   final TextEditingController nameController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
   final TextEditingController addressController = TextEditingController();
@@ -239,7 +239,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Form(
-        key: formkey,
+        // key: formkey,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -307,58 +307,11 @@ class _EditProfilePageState extends State<EditProfilePage> {
               ),
             ),
             const SizedBox(height: 20),
-            // _buildOption('Use current location', Icons.my_location),
-            // const SizedBox(height: 20),
-            // Text(
-            //   '-------- Or Add Address --------',
-            //   style: GoogleFonts.aBeeZee(
-            //     fontSize: 16,
-            //     color: TColors.texthint,
-            //   ),
-            // ),
-            // const SizedBox(height: 20),
-            // TextFormField(
-            //   validator: (val){
-            //     if(val==null || val.isEmpty)
-            //       {
-            //         return "PLEASE FILL THIS FIELD";
-            //       }
-            //   },
-            //   controller: addressController,
-            //   maxLines: null, // Allows the field to grow vertically
-            //   keyboardType: TextInputType.multiline,
-            //   decoration: InputDecoration(
-            //     suffixIcon: IconButton(onPressed: (){
-            //       Get.put(LocationController()).getCurrentLocation();
-            //
-            //
-            //
-            //
-            //     }, icon: Icon(FontAwesomeIcons.mapLocation)),
-            //     labelText: 'Address',
-            //     labelStyle: const TextStyle(color: Colors.blue),
-            //     enabledBorder: OutlineInputBorder(
-            //       borderRadius: BorderRadius.circular(10),
-            //       borderSide: const BorderSide(color: Colors.blue),
-            //     ),
-            //     focusedBorder: OutlineInputBorder(
-            //       borderRadius: BorderRadius.circular(10),
-            //       borderSide: const BorderSide(color: Colors.blue, width: 2),
-            //     ),
-            //   ),
-            // ),
-            const SizedBox(height: 20),
+
             ElevatedButton(
               onPressed: ()async{
-                if(formkey.currentState!.validate())
-                  {
-                    // Save the user details and set the profile picture
-
-
-                    _saveToSharedPreferences();
-                    _navigateToProfilePage();
-
-                  }
+                _saveToSharedPreferences();
+                _navigateToProfilePage();
 
               },
               style: ElevatedButton.styleFrom(

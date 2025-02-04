@@ -34,8 +34,8 @@ class _ProfilepageState extends State<Profilepage> {
   Future<void> getData() async
   {
     SharedPreferences preferences=await SharedPreferences.getInstance();
-    userName=await preferences.getString('name')??" ";
-    userEmail=await preferences.getString('email')??" ";
+    userName=await preferences.getString('name')??"PLEASE COMPLETE YOUR PROFILE";
+    userEmail=await preferences.getString('email')??"PLEASE COMPLETE YOUR PROFILE";
     profileImagePath=await preferences.getString("selectedAvatar")??"";
     print("user $userEmail");
     setState(() {
@@ -117,13 +117,13 @@ class _ProfilepageState extends State<Profilepage> {
                     ),
                   ),
                   // Address
-                  Text(
-                    userAddress,
-                    style: GoogleFonts.aBeeZee(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
-                  ),
+                  // Text(
+                  //   userAddress,
+                  //   style: GoogleFonts.aBeeZee(
+                  //     fontSize: 14,
+                  //     color: Colors.grey,
+                  //   ),
+                  // ),
                 ],
               ),
             ),

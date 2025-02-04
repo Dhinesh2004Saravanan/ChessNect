@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:chess_application_1/backendOperations/ServerAuthenticationUser.dart';
 import 'package:chess_application_1/screens/Aboutus/aboutus.dart';
 import 'package:chess_application_1/screens/loginPage.dart';
 import 'package:chess_application_1/screens/profilePage.dart';
@@ -64,18 +65,93 @@ class _DrawerNavState extends State<DrawerNav> {
           padding: EdgeInsets.zero,
           children: [
             InkWell(
-              onTap: () {
-                if(FirebaseAuth.instance.currentUser==null)
-                  {
-                    Get.to(() => LoginPage());
-                  }
-                else
-                  {
-                    Get.to(()=>Profilepage());
-                  }
+              onTap: () async{
+
+              var isRegistered=await  ServerAuthentication.isUserRegistered();
+
+              if(isRegistered)
+                {
+                  print("USER SUCCESSFULLY REGISTERED");
+                  Get.to(()=>Profilepage());
+                }
+              else
+                {
+                  print("USER NOT REGISTERED");
+                  Get.to(()=>LoginPage());
+                }
               },
-              child: (FirebaseAuth.instance.currentUser!=null)
-                  ? UserAccountsDrawerHeader(
+              child: FutureBuilder<bool>(future: ServerAuthentication.isUserRegistered(), builder:(context,snapshot){
+
+                if(snapshot.data==true)
+                  {
+                     return  UserAccountsDrawerHeader(
+                       accountName: Text(
+                         '${username ?? 'Hi!'}',
+                         style: GoogleFonts.aBeeZee(
+                           fontSize: 18,
+                           color: Colors.white,
+                         ),
+                       ),
+                       accountEmail: Text(
+                         emailId ?? 'Traveller',
+                         style: GoogleFonts.aBeeZee(
+                           fontSize: 18,
+                           color: Colors.white,
+                         ),
+                       ),
+                       currentAccountPicture: CircleAvatar(
+                         backgroundImage:(profileImage.isNotEmpty)
+                             ? AssetImage(profileImage)
+                             : AssetImage('asset/images/user/person.png')
+                         as ImageProvider,
+                       ),
+                       decoration: BoxDecoration(
+                         color: TColors.primary,
+                       ),
+                     );
+                  }
+                return Container(
+                  padding: EdgeInsets.all(16),
+                  color: TColors.primary,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage:
+                            AssetImage('asset/images/user/person.png')
+                            as ImageProvider,
+                          ),
+                          SizedBox(width: 5),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Login/Signup now',
+                                style: GoogleFonts.aBeeZee(
+                                  fontSize: 16,
+                                  color: TColors.textsecondary,
+                                ),
+                              ),
+                              Text(
+                                'and Grab Exclusive deals',
+                                style: GoogleFonts.aBeeZee(
+                                  fontSize: 12,
+                                  color: TColors.textsecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                );
+              } )
+                /*
+                ?
+                UserAccountsDrawerHeader(
                       accountName: Text(
                         '${username ?? 'Hi!'}',
                         style: GoogleFonts.aBeeZee(
@@ -138,6 +214,7 @@ class _DrawerNavState extends State<DrawerNav> {
                         ],
                       ),
                     ),
+                 */
             ),
             ListTile(
               leading: Image.asset(
