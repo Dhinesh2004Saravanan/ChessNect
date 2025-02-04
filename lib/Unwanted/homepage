@@ -1,0 +1,234 @@
+// Row(
+          //   children: [
+          //     Container(
+          //       padding: EdgeInsets.only(left: 10, right: 5),
+          //       child: CircleAvatar(
+          //         backgroundColor: Colors.grey.withOpacity(0.5),
+          //         child: Icon(
+          //           FontAwesomeIcons.arrowLeft,
+          //           color: Colors.white,
+          //         ),
+          //       ),
+          //     ),
+          //     Spacer(),
+          //     Container(
+          //       padding: EdgeInsets.only(left: 10, right: 5),
+          //       child: CircleAvatar(
+          //         backgroundColor: Colors.grey.withOpacity(0.5),
+          //         child: Icon(
+          //           FontAwesomeIcons.bookmark,
+          //           color: Colors.white,
+          //         ),
+          //       ),
+          //     ),
+          //     SizedBox(width: 16),
+          //     Container(
+          //       padding: EdgeInsets.only(left: 10, right: 10),
+          //       child: CircleAvatar(
+          //         backgroundColor: Colors.grey.withOpacity(0.5),
+          //         child: Icon(
+          //           Icons.more_vert,
+          //           color: Colors.white,
+          //         ),
+          //       ),
+          //     ),
+          //   ],
+          // ),
+
+
+
+          // Widget _buildBreakingnewsSection(BuildContext context, double height, double width) {
+          //   return SizedBox(
+          //     height: height * 0.05,
+          //     width: width * 0.95,
+          //     child: Row(
+          //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //       children: [
+          //         Text(
+          //           'Breaking News',
+          //           style:
+          //               GoogleFonts.aBeeZee(fontSize: 18, fontWeight: FontWeight.w600),
+          //         ),
+          //         TextButton(
+          //           onPressed: () {
+          //             // Get.to(() => Offers());
+          //           },
+          //           child: Text(
+          //             'View All',
+          //             style:
+          //                 GoogleFonts.aBeeZee(fontSize: 14, color: TColors.textlinks),
+          //           ),
+          //         ),
+          //       ],
+          //     ),
+          //   );
+          // }
+          //
+          // Widget _buildBreakingNews() {
+          //   return Container(
+          //     height: 180,
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(12),
+          //     ),
+          //     clipBehavior: Clip.hardEdge,
+          //     child: PageView.builder(
+          //       controller: _bNewsController,
+          //       itemCount: newsFeed.length,
+          //       itemBuilder: (context, index) {
+          //         final offer = newsFeed[index];
+          //         return GestureDetector(
+          //           onTap: () {
+          //             // Get.to(() => Offers());
+          //           },
+          //           child: Padding(
+          //             padding: EdgeInsets.symmetric(horizontal: 9),
+          //             child: Stack(
+          //               children: [
+          //                 // Image widget
+          //                 ClipRRect(
+          //                   borderRadius: BorderRadius.circular(12),
+          //                   child: Image.network(
+          //                     newsFeed[index].urlToImage!,
+          //                     fit: BoxFit.fill,
+          //                     width: double.infinity,
+          //                   ),
+          //                 ),
+          //                 // Gradient overlay
+          //                 Positioned.fill(
+          //                   child: Container(
+          //                     decoration: BoxDecoration(
+          //                       gradient: LinearGradient(
+          //                         begin: Alignment.topCenter,
+          //                         end: Alignment.bottomCenter,
+          //                         colors: [
+          //                           Colors.transparent,
+          //                           TColors.NSblack.withOpacity(0.9),
+          //                         ],
+          //                       ),
+          //                       borderRadius: BorderRadius.circular(12),
+          //                     ),
+          //                   ),
+          //                 ),
+          //                 Positioned(
+          //                   bottom: 0,
+          //                   left: 0,
+          //                   right: 0,
+          //                   child: Container(
+          //                     padding: EdgeInsets.all(12),
+          //                     child: Column(
+          //                       crossAxisAlignment: CrossAxisAlignment.start,
+          //                       children: [
+          //                         Text(
+          //                           newsFeed[index].title,
+          //                           style: TextStyle(
+          //                             // fontFamily: TFont.primaryfontfamily,
+          //                             color: TColors.textsecondary,
+          //                             fontWeight: FontWeight.w500,
+          //                             fontSize: 14,
+          //                           ),
+          //                         ),
+          //                         SizedBox(height: 4),
+          //                         Text(
+          //                           newsFeed[index].description!,
+          //                           style: TextStyle(
+          //                             // fontFamily: TFont.secondaryfontfamily,
+          //                             color: TColors.textsecondary,
+          //                             fontSize: 10,
+          //                           ),
+          //                         ),
+          //                       ],
+          //                     ),
+          //                   ),
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         );
+          //       },
+          //     ),
+          //   );
+          // }
+          //
+          // Widget _buildRecomendSection(
+          //     BuildContext context, double height, double width) {
+          //   return SizedBox(
+          //     height: height * 0.05,
+          //     width: width * 0.95,
+          //     child: Row(
+          //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //       children: [
+          //         Text(
+          //           'Recommendation',
+          //           style:
+          //               GoogleFonts.aBeeZee(fontSize: 18, fontWeight: FontWeight.w600),
+          //         ),
+          //         TextButton(
+          //           onPressed: () {
+          //             // Get.to(() => Offers());
+          //           },
+          //           child: Text(
+          //             'View All',
+          //             style:
+          //                 GoogleFonts.aBeeZee(fontSize: 14, color: TColors.textlinks),
+          //           ),
+          //         ),
+          //       ],
+          //     ),
+          //   );
+          // }
+
+
+
+
+
+void _saveToSharedPreferences() async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setString('name', nameController.text);
+    prefs.setString('email', emailController.text);
+    prefs.setString('address', addressController.text);
+    prefs.setString('avatar', selectedAvatar ?? "");
+  }
+
+
+
+/*
+
+    final newsItem = newsController.newsItems[index];
+              final publishedDate = formatPublishedDate(newsItem.datePublished!);
+              final authors = newsItem.authors;
+              final authorName =
+              authors.isNotEmpty ? authors[0].name : 'Unknown Author';
+              final authorImage = newsItem.attachments.isNotEmpty
+                  ? newsItem.attachments[0].url
+                  : 'https://via.placeholder.com/50';
+
+              return  Center(child: Text(_.newsItems.toString(),style: TextStyle(
+                color:  Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 30
+              ),));
+            },
+          );
+*/
+/*
+PageView.builder(
+            onPageChanged: (index) {
+              int durationInSeconds = DateTime.now().difference(_startTime).inSeconds;
+         //     Likes.timeSpent(index:  _currentIndex,durationInSeconds:  durationInSeconds);
+
+              setState(() {
+                _currentIndex = index;
+                _startTime = DateTime.now();
+              });
+            },
+            controller: _pageController,
+            itemCount: newsFeed.length,
+            itemBuilder: (context, index) {
+
+
+              return Center(
+                child: Text(index.toString()),
+              );
+            },
+          );
+*/
